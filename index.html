@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizza Classic | Car Restoration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Noto Serif', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Noto Serif', serif;
+                font-size: 32px;
+            }
+            
+            h1 {
+                line-height: 150%;
+                letter-spacing: -0.02em;
+            }
+            
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0;
+            }
+            
+            @media (min-width: 1024px) {
+                h1, h2, h3, h4, h5, h6 {
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        @layer components {
+            .hero-section {
+                background-size: cover;
+                background-position: center;
+                min-height: 100vh;
+                padding-top: 80px; /* Account for fixed navigation */
+            }
+            
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            
+            .animate-scroll {
+                animation: scroll 20s linear infinite;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-screen bg-cover bg-center bg-no-repeat flex items-end justify-start" style="background-image: url('images/hero-background.svg')">
+        <!-- Top Vignette -->
+        <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/60 to-transparent"></div>
+        <!-- Bottom Vignette -->
+        <div class="absolute bottom-0 left-0 right-0 h-80 md:h-32 bg-gradient-to-t from-black to-transparent"></div>
+        
+        <div class="container text-white mx-auto py-4 md:py-10 px-4 md:px-0 relative z-10 flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6">
+             <div>
+                <p>Authorized Ferrari Service</p>
+                <h1 class="text-[32px] md:text-[40px] font-semibold leading-[150%] tracking-[-0.02em] max-w-[442px]">Where Classic Cars Find Their Second Life</h1>
+                <p class="text-[#787873]">At RizzaClassic, we specialize in reviving the timeless beaty of vintage cars.</p>
+             </div>
+             
+             <div class="flex-shrink-0">
+                <button class="bg-white text-black px-9 py-4 rounded-sm font-medium hover:bg-gray-100 transition-colors duration-200">
+                    Contact Us
+                </button>
+             </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="bg-black py-[30px] ">
+        <!-- Mobile Horizontal Scroll -->
+        <div class="lg:hidden">
+            <div class="flex gap-4 overflow-x-auto scrollbar-hide" style="scroll-snap-type: x mandatory;">
+                <!-- Statistic 1 -->
+                <div class="flex-shrink-0 w-80 text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black ml-6" style="scroll-snap-align: start;">
+                    <h3 class="text-white text-[32px] font-semibold mb-2">30+</h3>
+                    <p class="text-gray-400 text-base">Anni di esperienza</p>
+                </div>
+                
+                <!-- Statistic 2 -->
+                <div class="flex-shrink-0 w-80 text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black" style="scroll-snap-align: start;">
+                    <h3 class="text-white text-[32px] font-semibold mb-2">150+</h3>
+                    <p class="text-gray-400 text-base">Vetture restaurate</p>
+                </div>
+                
+                <!-- Statistic 3 -->
+                <div class="flex-shrink-0 w-80 text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black" style="scroll-snap-align: start;">
+                    <h3 class="text-white text-[32px] font-semibold mb-2">10+</h3>
+                    <p class="text-gray-400 text-base">Paesi da cui provengono i nostri clienti collezionisti</p>
+                </div>
+                
+                <!-- Statistic 4 -->
+                <div class="flex-shrink-0 w-80 text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black mr-6" style="scroll-snap-align: start;">
+                    <h3 class="text-white text-[32px] font-semibold mb-2">'40-'70</h3>
+                    <p class="text-gray-400 text-base">Specializzati in sportive italiane degli anni</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desktop Grid -->
+        <div class="hidden lg:block">
+            <div class="container mx-auto px-4 md:px-0">
+                <div class="grid grid-cols-4 gap-8 lg:gap-12">
+                    <!-- Statistic 1 -->
+                    <div class="text-center lg:text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black">
+                        <h3 class="text-white text-[32px] font-semibold mb-2">30+</h3>
+                        <p class="text-gray-400 text-base">Anni di esperienza</p>
+                    </div>
+                    
+                    <!-- Statistic 2 -->
+                    <div class="text-center lg:text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black">
+                        <h3 class="text-white text-[32px] font-semibold mb-2">150+</h3>
+                        <p class="text-gray-400 text-base">Vetture restaurate</p>
+                    </div>
+                    
+                    <!-- Statistic 3 -->
+                    <div class="text-center lg:text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black">
+                        <h3 class="text-white text-[32px] font-semibold mb-2">10+</h3>
+                        <p class="text-gray-400 text-base">Paesi da cui provengono i nostri clienti collezionisti</p>
+                    </div>
+                    
+                    <!-- Statistic 4 -->
+                    <div class="text-center lg:text-left border border-[#1A1A1A] p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black">
+                        <h3 class="text-white text-[32px] font-semibold mb-2">'40-'70</h3>
+                        <p class="text-gray-400 text-base">Specializzati in sportive italiane degli anni</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-black py-[30px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-12 lg:mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-4">Nostri Servizi</h2>
+                <p class="text-gray-400 text-base max-w-2xl">Esperienza e professionalità al servizio della tua passione.</p>
+            </div>
+
+            <!-- Services Carousel -->
+            <div class="relative">
+                <!-- Carousel Container -->
+                <div class="services-carousel overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-out" id="services-track">
+                        <!-- Service Card 1 - Carozzeria -->
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black  h-80">
+                                <img src="images/carozzeria.svg" alt="Carozzeria" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-white text-xl font-semibold">Carozzeria</h3>
+                                        <img src="images/arrow-right.svg" alt="Arrow" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 2 - Officina Meccanica -->
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black  h-80">
+                                <img src="images/meccanica.svg" alt="Officina Meccanica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-white text-xl font-semibold">Officina Meccanica</h3>
+                                        <img src="images/arrow-right.svg" alt="Arrow" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 3 - Tapezzeria -->
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black  h-80">
+                                <img src="images/tapezzeria.png" alt="Tapezzeria" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-white text-xl font-semibold">Tapezzeria</h3>
+                                        <img src="images/arrow-right.svg" alt="Arrow" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Card 4 - Consulenza -->
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                            <div class="relative group cursor-pointer overflow-hidden rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black  h-80">
+                                <img src="images/Property 1=consulenza.svg" alt="Consulenza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6">
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="text-white text-xl font-semibold">Consulenza</h3>
+                                        <img src="images/arrow-right.svg" alt="Arrow" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="flex items-center justify-center mt-8 space-x-2">
+                    <!-- Previous Button -->
+                    <button class="services-prev-btn p-2 rounded-sm bg-[#0D0D0D] hover:bg-[#1A1A1A] transition-colors duration-200" id="services-prev">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Dots Indicator -->
+                    <div class="bg-[#0D0D0D] rounded-sm p-2 h-9 flex items-center">
+                        <div class="flex space-x-2" id="services-dots">
+                            <button class="w-2 h-2 rounded-full bg-white services-dot active" data-slide="0"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-600 services-dot" data-slide="1"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-600 services-dot" data-slide="2"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-600 services-dot" data-slide="3"></button>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <button class="services-next-btn p-2 rounded-sm bg-[#0D0D0D] hover:bg-[#1A1A1A] transition-colors duration-200" id="services-next">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section class="bg-black py-[30px] ">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-12 lg:mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-4">Our work</h2>
+                <p class="text-gray-400 text-base max-w-3xl">Negli anni abbiamo maturato un'esperienza professionale nel mondo delle competizioni automobilistiche</p>
+            </div>
+
+            <!-- Work Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Work Item 1 - Ferrari 365 Daytona GTB/4 -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-lg">
+                    <img src="images/ourwork1.svg" alt="Ferrari 365 Daytona GTB/4" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-white text-[20px] font-normal leading-[150%] tracking-[-0.01em]">Ferrari 365 Daytona GTB/4</h4>
+                            <div class="flex items-center text-white">
+                                <span class="text-sm font-light mr-2">View</span>
+                                <img src="images/arrow-right.svg" alt="Arrow" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Item 2 - Alfa Romeo 1900 CSS Touring -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-lg">
+                    <img src="images/ourwork2.svg" alt="Alfa Romeo 1900 CSS Touring" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-white text-[20px] font-normal leading-[150%] tracking-[-0.01em]">Alfa Romeo 1900 CSS Touring</h4>
+                            <div class="flex items-center text-white">
+                                <span class="text-sm font-light mr-2">View</span>
+                                <img src="images/arrow-right.svg" alt="Arrow" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Item 3 - Cisitalia 202 Coupe -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-lg">
+                    <img src="images/ourwork3.svg" alt="Cisitalia 202 Coupe" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h4 class="text-white text-[20px] font-normal leading-[150%] tracking-[-0.01em]">Cisitalia 202 Coupe</h4>
+                            <div class="flex items-center text-white">
+                                <span class="text-sm font-light mr-2">View</span>
+                                <img src="images/arrow-right.svg" alt="Arrow" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="flex justify-center">
+                <button class="bg-white text-black px-8 py-3 rounded-sm font-medium hover:bg-gray-100 transition-colors duration-200">
+                    View All
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialization Section -->
+    <section class="bg-black py-[30px] lg:py-[120px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold">We specialize in rebuilding</h2>
+            </div>
+
+            <!-- Desktop Brand Grid -->
+            <div class="hidden lg:flex items-center justify-center space-x-16">
+                <div class="brand-logo">
+                    <img src="images/fiat.svg" alt="Fiat" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/jaguar.svg" alt="Jaguar" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/alfaromeo.svg" alt="Alfa Romeo" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/ferrari.svg" alt="Ferrari" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/landrover.svg" alt="Land Rover" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+
+            <!-- Mobile Infinite Scroll -->
+            <div class="lg:hidden infinite-scroll-container h-16">
+                <!-- Blur gradients -->
+                <div class="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-black to-transparent z-10"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-black to-transparent z-10"></div>
+                
+                <div class="scroll-content h-16 items-center" id="infinite-scroll">
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/fiat.svg" alt="Fiat" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/jaguar.svg" alt="Jaguar" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/alfaromeo.svg" alt="Alfa Romeo" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/ferrari.svg" alt="Ferrari" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/landrover.svg" alt="Land Rover" class="h-12 w-auto opacity-70">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="bg-black py-[60px] lg:py-[120px]" id="contatti">
+        <div class="container mx-auto px-4 lg:px-12 xl:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Left Column - Form Header -->
+                <div>
+                    <h2 class="text-white text-[32px] lg:text-[40px] font-semibold leading-[150%] tracking-[-0.02em] mb-8">Request a restoration.</h2>
+                    
+                    <div class="mb-8">
+                        <p class="text-gray-400 text-base mb-1">Prefer not to use the form?</p>
+                        <p class="text-white text-base mb-4">You can reach us by phone or email with the details of your car.</p>
+                        
+                        <div class="space-y-4">
+                            <a href="mailto:info@rizzaclassic.com" class="inline-flex items-center gap-2 px-2 py-1 border border-gray-600 rounded-lg text-white hover:border-gray-400 transition-colors">
+                                <img src="images/forward.svg" alt="Arrow" class="w-4 h-4">
+                                <span>info@rizzaclassic.com</span>
+                            </a>
+                            <a href="tel:+393466383339" class="inline-flex items-center gap-2 px-3 py-1 border border-gray-600 rounded-lg text-white hover:border-gray-400 transition-colors">
+                                <img src="images/forward.svg" alt="Arrow" class="w-4 h-4">
+                                <span>+39 346 6383 339</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Form -->
+                <div>
+                    <form class="space-y-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="fullname" class="block text-white text-base font-medium mb-3">Full name</label>
+                            <input 
+                                type="text" 
+                                id="fullname" 
+                                name="fullname" 
+                                placeholder="Your full name"
+                                class="w-full px-4 py-3 bg-[#1A1A1A]  rounded-md text-white placeholder-[#B2B2B2] focus:outline-none focus:border-gray-500 transition-colors"
+                            >
+                        </div>
+
+                        <!-- Email Address -->
+                        <div>
+                            <label for="email" class="block text-white text-base font-medium mb-3">Email address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Your email address"
+                                class="w-full px-4 py-3 bg-[#1A1A1A]  rounded-md text-white placeholder-[#B2B2B2] focus:outline-none focus:border-gray-500 transition-colors"
+                            >
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-white text-base font-medium mb-3">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="3"
+                                placeholder="Write something"
+                                class="w-full px-4 py-3 bg-[#1A1A1A]  rounded-md text-white placeholder-[#B2B2B2] focus:outline-none focus:border-gray-500 transition-colors resize-none"
+                            ></textarea>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="flex items-start gap-3">
+                            <input 
+                                type="checkbox" 
+                                id="terms" 
+                                name="terms"
+                                class="mt-1 w-4 h-4 bg-transparent border border-gray-600 rounded focus:outline-none checked:bg-white checked:border-white"
+                            >
+                            <label for="terms" class="text-gray-400 text-sm leading-relaxed">
+                                I hereby accept RizzaClassic General Terms and Privacy Policy
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button 
+                            type="submit"
+                            class="bg-white text-black px-8 py-4 rounded-md font-medium hover:bg-gray-200 transition-colors"
+                        >
+                            Send message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-12 xl:px-16 py-12 lg:py-16">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+                <!-- Contacts Column -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6">Contacts</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Email</p>
+                            <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors">info@rizzaclassic.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Phone number</p>
+                            <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors">+39 346 6383 339</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Address</p>
+                            <p class="text-white">Via Prenestina, 912 00155 Roma (RM)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rizza Classic Column -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6">Rizza Classic</h3>
+                    <div class="space-y-3">
+                        <a href="#chi-siamo" class="block text-gray-400 hover:text-white transition-colors">About us</a>
+                        <a href="#servizi" class="block text-gray-400 hover:text-white transition-colors">Services</a>
+                        <a href="#extra-services" class="block text-gray-400 hover:text-white transition-colors">Extra services</a>
+                    </div>
+                </div>
+
+                <!-- Our Work Column -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6">Our work</h3>
+                    <div class="space-y-3">
+                        <a href="#restauri" class="block text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                        <a href="#contatti" class="block text-gray-400 hover:text-white transition-colors">Contacts</a>
+                    </div>
+                </div>
+
+                <!-- Services Column -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6">Services</h3>
+                    <div class="space-y-3">
+                        <a href="#carrozzeria" class="block text-gray-400 hover:text-white transition-colors">Carrozzeria</a>
+                        <a href="#officina" class="block text-gray-400 hover:text-white transition-colors">Officina Meccanica</a>
+                        <a href="#tapezzeria" class="block text-gray-400 hover:text-white transition-colors">Tapezzeria</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                    <!-- Copyright -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-gray-500 text-sm">©</span>
+                        <span class="text-gray-400 text-sm">Rizza Classic</span>
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="flex gap-6">
+                        <a href="#terms" class="text-gray-400 text-sm hover:text-white transition-colors">Terms and Conditions</a>
+                        <a href="#privacy" class="text-gray-400 text-sm hover:text-white transition-colors">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Large Brand Name -->
+    <div class="w-screen overflow-hidden">
+        <img src="images/RIZZACLASSIC.svg" alt="RIZZACLASSIC" class="w-full h-auto select-none pointer-events-none">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
