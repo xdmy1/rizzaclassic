@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="restorations-page-title">Portfolio Restauri | Rizza Classic - Galleria Auto d'Epoca Restaurate</title>
+    <meta name="description" data-translate="restorations-page-description" content="Scopri i nostri restauri auto d'epoca completati. Portfolio di Ferrari, Alfa Romeo, Fiat, Cisitalia restaurate da Rizza Classic Roma. 150+ auto storiche riportate al loro splendore originale.">
+    <meta name="keywords" data-translate="restorations-page-keywords" content="portfolio restauri auto d'epoca, galleria restauri auto storiche, Ferrari restaurate Roma, Alfa Romeo restaurate, Fiat d'epoca restaurate, Cisitalia restauro, esempi restauro auto classiche, before after restauro auto d'epoca">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rizza Classic">
+    <meta property="og:title" data-translate="restorations-og-title" content="Portfolio Restauri | Rizza Classic - Galleria Auto d'Epoca Restaurate">
+    <meta property="og:description" data-translate="restorations-og-description" content="Scopri i nostri restauri auto d'epoca completati. Portfolio di Ferrari, Alfa Romeo, Fiat restaurate dalla nostra officina specializzata a Roma.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rizzaclassic.com/restorations.html">
+    <meta property="og:image" content="https://rizzaclassic.com/images/ourwork1.svg">
+    <meta property="og:locale" content="it_IT">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-translate="restorations-twitter-title" content="Portfolio Restauri Auto d'Epoca | Rizza Classic Roma">
+    <meta name="twitter:description" data-translate="restorations-twitter-description" content="Ferrari, Alfa Romeo, Fiat restaurate. 150+ auto storiche riportate al loro splendore originale.">
+    <meta name="twitter:image" content="https://rizzaclassic.com/images/ourwork1.svg">
+    <link rel="canonical" href="https://rizzaclassic.com/restorations.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Noto Serif', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Noto Serif', serif;
+                font-size: 32px;
+            }
+            
+            h1 {
+                line-height: 150%;
+                letter-spacing: -0.02em;
+            }
+            
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0;
+            }
+            
+            @media (min-width: 1024px) {
+                h1, h2, h3, h4, h5, h6 {
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        @layer components {
+            .hero-section {
+                background-size: cover;
+                background-position: center;
+                min-height: 100vh;
+                padding-top: 80px; /* Account for fixed navigation */
+            }
+            
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-clip">
+    
+    <!-- Projects Section -->
+    <section class="bg-black py-[30px] mt-20">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-12 lg:mb-16">
+                <h1 class="text-white text-[32px] lg:text-[40px] font-semibold mb-4" data-translate="restorations-title">Restauri</h1>
+                <p class="text-gray-400 text-base max-w-3xl" data-translate="restorations-subtitle">Un laboratorio dedicato al restauro e alla conservazione di automobili d'epoca, realizzando progetti finiti ai veri standard dei collezionisti.</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+                <!-- Projects will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-b from-[#0D0D0D] to-black border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-12 xl:px-16 py-12 lg:py-16">
+            <!-- Desktop Layout -->
+            <div class="hidden lg:flex justify-between mb-12">
+                <!-- Contacts Section -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-contacts">Contatti</h3>
+                    <div class="space-y-4 flex  items-end justify-center gap-5">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-email">Email</p>
+                            <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors text-sm">info@rizzaclassic.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-phone">Numero di telefono</p>
+                            <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors text-sm">+39 346 6383 339</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-address">Indirizzo</p>
+                            <p class="text-white text-sm">Via Prenestina, 912 00155 Roma (RM)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Sections -->
+                <div class="flex gap-16">
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-rizza-classic">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="index.html#chi-siamo" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-about">Chi siamo</a>
+                            <a href="index.html#servizi" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-services">Servizi</a>
+                            <a href="index.html#extra-services" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-extra-services">Servizi extra</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-our-work">Il nostro lavoro</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-portfolio">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-contacts-link">Contatti</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-services-list">Servizi</h3>
+                        <div class="space-y-3">
+                            <a href="index.html#carrozzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-carrozzeria">Carrozzeria</a>
+                            <a href="index.html#officina" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-officina">Officina Meccanica</a>
+                            <a href="index.html#tapezzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-tapezzeria">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Layout -->
+            <div class="lg:hidden mb-12">
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Contacts Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-contacts">Contacts</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1" data-translate="footer-email">Email</p>
+                                <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors">info@rizzaclassic.com</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1" data-translate="footer-phone">Phone number</p>
+                                <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors">+39 346 6383 339</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1" data-translate="footer-address">Address</p>
+                                <p class="text-white">Via Prenestina, 912 00155 Roma (RM)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-rizza-classic">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="index.html#chi-siamo" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-about">About us</a>
+                            <a href="index.html#servizi" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-services">Services</a>
+                            <a href="index.html#extra-services" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-extra-services">Extra services</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-our-work">Our work</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-portfolio">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-contacts-link">Contacts</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-services-list">Services</h3>
+                        <div class="space-y-3">
+                            <a href="index.html#carrozzeria" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-carrozzeria">Carrozzeria</a>
+                            <a href="index.html#officina" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-officina">Officina Meccanica</a>
+                            <a href="index.html#tapezzeria" class="block text-gray-400 hover:text-white transition-colors" data-translate="footer-tapezzeria">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                    <!-- Copyright -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-gray-500 text-sm">©</span>
+                        <span class="text-gray-400 text-sm">Rizza Classic</span>
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="flex gap-6">
+                        <a href="#terms" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-terms">Termini e Condizioni</a>
+                        <a href="#privacy" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Large Brand Name -->
+    <div class="w-screen overflow-x-hidden">
+        <img src="images/RIZZACLASSIC.svg" alt="RIZZACLASSIC" class="w-full h-auto select-none pointer-events-none">
+    </div>
+    
+    <script src="main.js"></script>
+    <script>
+        // Load projects from JSON
+        async function loadProjects() {
+            try {
+                const response = await fetch('projects.json');
+                const data = await response.json();
+                const projectsGrid = document.getElementById('projects-grid');
+                const currentLang = localStorage.getItem('language') || 'it';
+                
+                data.projects.forEach(project => {
+                    const projectCard = document.createElement('div');
+                    projectCard.className = 'relative group cursor-pointer overflow-hidden rounded-md';
+                    projectCard.onclick = () => {
+                        window.location.href = `project.html?id=${project.id}`;
+                    };
+                    
+                    projectCard.innerHTML = `
+                        <img src="${project.mainImage}" alt="${project.name[currentLang]}" class="w-full h-[550px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-white text-[20px] font-normal leading-[150%] tracking-[-0.01em]">${project.name[currentLang]}</h4>
+                                <div class="flex items-center text-white">
+                                    <span class="text-sm font-light mr-2" data-translate="view-project">${currentLang === 'it' ? 'Visualizza' : 'View'}</span>
+                                    <img src="images/arrow-right.svg" alt="Arrow" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1">
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    projectsGrid.appendChild(projectCard);
+                });
+            } catch (error) {
+                console.error('Error loading projects:', error);
+            }
+        }
+        
+        // Load projects when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize language switcher
+            new LanguageSwitcher();
+            
+            // Load projects
+            loadProjects();
+        });
+    </script>
+</body>
+</html>

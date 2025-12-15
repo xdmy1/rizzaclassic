@@ -1,0 +1,403 @@
+{
+  "projects": [
+    {
+      "id": "ferrari-365-daytona",
+      "name": {
+        "it": "Ferrari 365 Daytona GTB/4",
+        "en": "Ferrari 365 Daytona GTB/4"
+      },
+      "year": "1973",
+      "engine": {
+        "it": "4.4L V12",
+        "en": "4.4L V12"
+      },
+      "bodyStyle": {
+        "it": "Scaglietti",
+        "en": "Scaglietti"
+      },
+      "production": {
+        "it": "1,284 unità",
+        "en": "1,284 units"
+      },
+      "description": {
+        "it": "Uno dei più belli gran turismo di Maranello, divenuta famosa per le sue straordinarie caratteristiche dinamiche ed estetiche.",
+        "en": "One of the most beautiful gran turismo from Maranello, famous for its extraordinary dynamic and aesthetic characteristics."
+      },
+      "mainImage": "images/Daytona365gtr:4.png",
+      "gallery": [
+        "images/ourwork1.svg",
+        "images/Daytona365gtr:4.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Interni ed esterni dal design squisito e presentazione professionale nei minimi dettagli coinvolgono completamente emotivamente il fruitore.",
+        "en": "Exquisite interior and exterior design with professional presentation in every detail completely emotionally engages the viewer."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "alfa-romeo-1900",
+      "name": {
+        "it": "Alfa Romeo 1900 CSS Touring",
+        "en": "Alfa Romeo 1900 CSS Touring"
+      },
+      "year": "1954",
+      "engine": {
+        "it": "2.0L I4",
+        "en": "2.0L I4"
+      },
+      "bodyStyle": {
+        "it": "Touring",
+        "en": "Touring"
+      },
+      "production": {
+        "it": "17,390 unità",
+        "en": "17,390 units"
+      },
+      "description": {
+        "it": "Un'icona del design italiano degli anni '50, perfetto equilibrio tra eleganza e prestazioni.",
+        "en": "An icon of 1950s Italian design, perfect balance between elegance and performance."
+      },
+      "mainImage": "images/alfaromeo1900.png",
+      "gallery": [
+        "images/ourwork2.svg",
+        "images/alfaromeo1900.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Restauro completo che preserva l'autenticità originale con tecniche artigianali tradizionali.",
+        "en": "Complete restoration that preserves original authenticity with traditional artisan techniques."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "cisitalia-202",
+      "name": {
+        "it": "Cisitalia 202 Coupe",
+        "en": "Cisitalia 202 Coupe"
+      },
+      "year": "1947",
+      "engine": {
+        "it": "1.1L I4",
+        "en": "1.1L I4"
+      },
+      "bodyStyle": {
+        "it": "Pinin Farina",
+        "en": "Pinin Farina"
+      },
+      "production": {
+        "it": "170 unità",
+        "en": "170 units"
+      },
+      "description": {
+        "it": "Capolavoro del design automobilistico, esposto al MoMA di New York come opera d'arte.",
+        "en": "Masterpiece of automotive design, exhibited at the MoMA in New York as a work of art."
+      },
+      "mainImage": "images/cistalia202.png",
+      "gallery": [
+        "images/ourwork3.svg",
+        "images/cistalia202.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Ogni dettaglio restaurato con precisione maniacale per preservare questa opera d'arte su ruote.",
+        "en": "Every detail restored with meticulous precision to preserve this work of art on wheels."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "alfa-romeo-6c-2500",
+      "name": {
+        "it": "Alfa romeo 6C 2500 SS Villa d'Este Touring",
+        "en": "Alfa romeo 6C 2500 SS Villa d'Este Touring"
+      },
+      "year": "1949",
+      "engine": {
+        "it": "2.5L I6",
+        "en": "2.5L I6"
+      },
+      "bodyStyle": {
+        "it": "Touring Villa d'Este",
+        "en": "Touring Villa d'Este"
+      },
+      "production": {
+        "it": "33 unità",
+        "en": "33 units"
+      },
+      "description": {
+        "it": "Rara e preziosa Villa d'Este, considerata una delle più belle Alfa Romeo mai create.",
+        "en": "Rare and precious Villa d'Este, considered one of the most beautiful Alfa Romeos ever created."
+      },
+      "mainImage": "images/alfaromeo6c.png",
+      "gallery": [
+        "images/alfaromeo6c.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Restauro di altissimo livello per questa rarissima Villa d'Este, gioiello del patrimonio automobilistico.",
+        "en": "Highest level restoration for this very rare Villa d'Este, jewel of automotive heritage."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "lancia-aurelia-b52",
+      "name": {
+        "it": "Lancia Aurelia 2000 B52 Coupé Vignale",
+        "en": "Lancia Aurelia 2000 B52 Coupé Vignale"
+      },
+      "year": "1951",
+      "engine": {
+        "it": "2.0L V6",
+        "en": "2.0L V6"
+      },
+      "bodyStyle": {
+        "it": "Vignale",
+        "en": "Vignale"
+      },
+      "production": {
+        "it": "200 unità",
+        "en": "200 units"
+      },
+      "description": {
+        "it": "Elegante coupé con il primo motore V6 al mondo, simbolo dell'innovazione italiana.",
+        "en": "Elegant coupé with the world's first V6 engine, symbol of Italian innovation."
+      },
+      "mainImage": "images/lanciaaurelia200.png",
+      "gallery": [
+        "images/lanciaaurelia200.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Preservazione dell'eleganza e dell'innovazione tecnica di questo pioniere automobilistico.",
+        "en": "Preservation of the elegance and technical innovation of this automotive pioneer."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "chrysler-gs-1",
+      "name": {
+        "it": "Chrysler GS-1 Ghia",
+        "en": "Chrysler GS-1 Ghia"
+      },
+      "year": "1953",
+      "engine": {
+        "it": "5.4L V8",
+        "en": "5.4L V8"
+      },
+      "bodyStyle": {
+        "it": "Ghia",
+        "en": "Ghia"
+      },
+      "production": {
+        "it": "1 unità",
+        "en": "1 unit"
+      },
+      "description": {
+        "it": "Prototipo unico realizzato da Ghia, fusione tra design italiano e potenza americana.",
+        "en": "Unique prototype created by Ghia, fusion between Italian design and American power."
+      },
+      "mainImage": "images/chrysler.png",
+      "gallery": [
+        "images/chrysler.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Restauro di un pezzo unico al mondo, testimonianza della collaborazione italo-americana.",
+        "en": "Restoration of a one-of-a-kind piece, testimony to Italian-American collaboration."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "alfa-romeo-6c-2300",
+      "name": {
+        "it": "Alfa Romeo 6C 2300 Cabriolet Worblaufen",
+        "en": "Alfa Romeo 6C 2300 Cabriolet Worblaufen"
+      },
+      "year": "1934",
+      "engine": {
+        "it": "2.3L I6",
+        "en": "2.3L I6"
+      },
+      "bodyStyle": {
+        "it": "Worblaufen",
+        "en": "Worblaufen"
+      },
+      "production": {
+        "it": "15 unità",
+        "en": "15 units"
+      },
+      "description": {
+        "it": "Rarissimo cabriolet pre-guerra, testimonianza dell'eccellenza Alfa Romeo degli anni '30.",
+        "en": "Very rare pre-war cabriolet, testimony to Alfa Romeo excellence of the 1930s."
+      },
+      "mainImage": "images/alfaromeo6c2300.png",
+      "gallery": [
+        "images/alfaromeo6c2300.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Restauro filologico di questo rarissimo esemplare pre-bellico con tecniche d'epoca.",
+        "en": "Philological restoration of this very rare pre-war specimen with period techniques."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "fiat-500f",
+      "name": {
+        "it": "Fiat 500 F",
+        "en": "Fiat 500 F"
+      },
+      "year": "1968",
+      "engine": {
+        "it": "0.5L I2",
+        "en": "0.5L I2"
+      },
+      "bodyStyle": {
+        "it": "Berlina",
+        "en": "Sedan"
+      },
+      "production": {
+        "it": "1,200,000 unità",
+        "en": "1,200,000 units"
+      },
+      "description": {
+        "it": "L'iconica utilitaria italiana, simbolo del boom economico e della motorizzazione di massa.",
+        "en": "The iconic Italian city car, symbol of the economic boom and mass motorization."
+      },
+      "mainImage": "images/fiat500f.png",
+      "gallery": [
+        "images/fiat500f.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Restauro conservativo che preserva il fascino originale di questo simbolo italiano.",
+        "en": "Conservative restoration that preserves the original charm of this Italian symbol."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    },
+    {
+      "id": "alfa-romeo-6c-2500-pintinfarina",
+      "name": {
+        "it": "Alfa Romeo 6C 2500 SS Cabriolet Pintinfarina",
+        "en": "Alfa Romeo 6C 2500 SS Cabriolet Pintinfarina"
+      },
+      "year": "1948",
+      "engine": {
+        "it": "2.5L I6",
+        "en": "2.5L I6"
+      },
+      "bodyStyle": {
+        "it": "Pintinfarina",
+        "en": "Pintinfarina"
+      },
+      "production": {
+        "it": "680 unità",
+        "en": "680 units"
+      },
+      "description": {
+        "it": "Splendido cabriolet firmato Pininfarina, perfetta sintesi tra sportività ed eleganza.",
+        "en": "Beautiful Pininfarina cabriolet, perfect synthesis between sportiness and elegance."
+      },
+      "mainImage": "images/alfaromeo6c2500.png",
+      "gallery": [
+        "images/alfaromeo6c2500.png"
+      ],
+      "craftmanshipTitle": {
+        "it": "Dettagli di artigianalità",
+        "en": "Craftsmanship details"
+      },
+      "craftmanshipDescription": {
+        "it": "Restauro che celebra la maestria di Pininfarina e l'eccellenza meccanica Alfa Romeo.",
+        "en": "Restoration that celebrates Pininfarina's mastery and Alfa Romeo's mechanical excellence."
+      },
+      "ctaTitle": {
+        "it": "Inizia il tuo viaggio di restauro",
+        "en": "Begin Your Restoration Journey"
+      },
+      "ctaDescription": {
+        "it": "Facci riportare la tua auto classica al suo splendore originale.",
+        "en": "Let us bring your classic automobile back to its original splendor and craftsmanship."
+      }
+    }
+  ]
+}

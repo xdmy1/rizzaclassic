@@ -20,7 +20,7 @@ class LuxuryNavigation {
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.html">
-                        <img src="images/logo.svg" alt="Rizza Classic" class="h-10 lg:h-12 transition-all duration-500 hover:scale-105">
+                        <img src="images/LOGO.png" alt="Rizza Classic" class="h-10 lg:h-12 transition-all duration-500 hover:scale-105">
                     </a>
                 </div>
 
@@ -34,7 +34,7 @@ class LuxuryNavigation {
                         <span data-translate="nav-servizi">Servizi</span>
                         <span class="nav-underline"></span>
                     </a>
-                    <a href="#restauri" class="nav-link relative text-white text-base">
+                    <a href="restorations.html" class="nav-link relative text-white text-base">
                         <span data-translate="nav-restauri">Restauri</span>
                         <span class="nav-underline"></span>
                     </a>
@@ -81,7 +81,7 @@ class LuxuryNavigation {
                 <!-- Logo -->
                 <div class="absolute top-6 left-6">
                     <a href="index.html">
-                        <img src="images/logo.svg" alt="Rizza Classic" class="h-12">
+                        <img src="images/LOGO.png" alt="Rizza Classic" class="h-12">
                     </a>
                 </div>
                 
@@ -95,7 +95,7 @@ class LuxuryNavigation {
                             <a href="#servizi" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
                                 <span data-translate="nav-servizi">Servizi</span>
                             </a>
-                            <a href="#restauri" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
+                            <a href="restorations.html" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
                                 <span data-translate="nav-restauri">Restauri</span>
                             </a>
                             <a href="#vendita" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
@@ -495,7 +495,7 @@ class LanguageSwitcher {
                 'nav-vendita': 'Vendita',
                 
                 // Hero Section
-                'hero-subtitle': 'Servizio Autorizzato Ferrari',
+                'hero-subtitle': 'Servizio di Qualità a Roma',
                 'hero-title': 'Dove le auto classiche trovano la loro seconda vita.',
                 'hero-description': 'In RizzaClassic, ci specializziamo nel far rivivere la bellezza senza tempo delle auto d\'epoca.',
                 'hero-contact-btn': 'Contattaci',
@@ -585,7 +585,21 @@ class LanguageSwitcher {
                 // Thanks Page
                 'thanks-title': 'Messaggio Inviato',
                 'thanks-message': 'Grazie per averci contattato. Il tuo messaggio è stato inviato con successo. Ti risponderemo il prima possibile.',
-                'thanks-button': 'Torna alla Homepage'
+                'thanks-button': 'Torna alla Homepage',
+                
+                // Restorations Page
+                'restorations-title': 'Restauri',
+                'restorations-subtitle': 'Un laboratorio dedicato al restauro e alla conservazione di automobili d\'epoca, realizzando progetti finiti ai veri standard dei collezionisti.',
+                'view-project': 'Visualizza',
+                
+                // Project Page
+                'restoration-project': 'Progetto di Restauro',
+                'project-year-label': 'Anno',
+                'project-body-style-label': 'Carrozzeria', 
+                'project-engine-label': 'Motore',
+                'project-production-label': 'Produzione',
+                'cta-start-project': 'Inizia un Progetto',
+                'cta-view-projects': 'Visualizza Altri Progetti'
             },
             en: {
                 // Navigation
@@ -596,7 +610,7 @@ class LanguageSwitcher {
                 'nav-vendita': 'Sales',
                 
                 // Hero Section
-                'hero-subtitle': 'Authorized Ferrari Service',
+                'hero-subtitle': 'Quality Service in Rome',
                 'hero-title': 'Where classic cars find their second life.',
                 'hero-description': 'At RizzaClassic, we specialize in reviving the timeless beauty of vintage cars.',
                 'hero-contact-btn': 'Contact Us',
@@ -686,7 +700,21 @@ class LanguageSwitcher {
                 // Thanks Page
                 'thanks-title': 'Message Sent',
                 'thanks-message': 'Thank you for contacting us. Your message has been sent successfully. We will respond as soon as possible.',
-                'thanks-button': 'Back to Homepage'
+                'thanks-button': 'Back to Homepage',
+                
+                // Restorations Page
+                'restorations-title': 'Restorations',
+                'restorations-subtitle': 'A workshop dedicated to the restoration and preservation of classic automobiles, delivering projects finished to true collector standards.',
+                'view-project': 'View',
+                
+                // Project Page
+                'restoration-project': 'Restoration Project',
+                'project-year-label': 'Year',
+                'project-body-style-label': 'Body Style',
+                'project-engine-label': 'Engine',
+                'project-production-label': 'Production',
+                'cta-start-project': 'Start a Project',
+                'cta-view-projects': 'View More Projects'
             }
         };
         this.init();
