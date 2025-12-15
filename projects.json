@@ -23,10 +23,16 @@
         "it": "Uno dei più belli gran turismo di Maranello, divenuta famosa per le sue straordinarie caratteristiche dinamiche ed estetiche.",
         "en": "One of the most beautiful gran turismo from Maranello, famous for its extraordinary dynamic and aesthetic characteristics."
       },
-      "mainImage": "images/Daytona365gtr:4.png",
+      "mainImage": "images/daytona0.jpg",
       "gallery": [
-        "images/ourwork1.svg",
-        "images/Daytona365gtr:4.png"
+        "images/daytona0.jpg",
+        "images/daytona1.png",
+        "images/daytona2.png",
+        "images/daytona3.jpg",
+        "images/daytona4.png",
+        "images/daytona5.png",
+        "images/daytona6.png",
+        "images/daytona7.png"
       ],
       "craftmanshipTitle": {
         "it": "Dettagli di artigianalità",
@@ -70,7 +76,7 @@
       },
       "mainImage": "images/alfaromeo1900.png",
       "gallery": [
-        "images/ourwork2.svg",
+        "images/ourwork2.png",
         "images/alfaromeo1900.png"
       ],
       "craftmanshipTitle": {
@@ -115,7 +121,7 @@
       },
       "mainImage": "images/cistalia202.png",
       "gallery": [
-        "images/ourwork3.svg",
+        "images/ourwork3.png",
         "images/cistalia202.png"
       ],
       "craftmanshipTitle": {

@@ -12,12 +12,12 @@
     <meta id="og-description" property="og:description" content="Scopri i dettagli del restauro di questa auto d'epoca presso la nostra officina specializzata a Roma. Tecniche professionali e attenzione ai dettagli.">
     <meta property="og:type" content="website">
     <meta id="og-url" property="og:url" content="https://rizzaclassic.com/project.html">
-    <meta id="og-image" property="og:image" content="https://rizzaclassic.com/images/ourwork1.svg">
+    <meta id="og-image" property="og:image" content="https://rizzaclassic.com/images/ourwork1.png">
     <meta property="og:locale" content="it_IT">
     <meta name="twitter:card" content="summary_large_image">
     <meta id="twitter-title" name="twitter:title" content="Restauro Auto d'Epoca | Rizza Classic">
     <meta id="twitter-description" name="twitter:description" content="Dettagli del restauro professionale di auto storiche presso la nostra officina Roma.">
-    <meta id="twitter-image" name="twitter:image" content="https://rizzaclassic.com/images/ourwork1.svg">
+    <meta id="twitter-image" name="twitter:image" content="https://rizzaclassic.com/images/ourwork1.png">
     <link id="canonical-url" rel="canonical" href="https://rizzaclassic.com/project.html">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +80,7 @@
 <body class="bg-black text-white overflow-x-clip">
     
     <!-- Project Hero Section -->
-    <section class="hero-section relative min-h-screen bg-cover bg-center bg-no-repeat flex items-end justify-start" id="project-hero">
+    <section class="hero-section relative min-h-screen bg-cover bg-center bg-no-repeat flex items-end justify-start pb-10" id="project-hero">
         <!-- Top Vignette -->
         <div class="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-black/80 via-black/40 to-transparent"></div>
         <!-- Bottom Vignette -->
@@ -98,7 +98,7 @@
     </section>
 
     <!-- Project Details Section -->
-    <section class="bg-black py-[30px] pl-6 md:pl-0">
+    <section class="bg-black py-[30px] pb-10 pl-6 md:pl-0">
         <!-- Mobile Horizontal Scroll -->
         <div class="lg:hidden">
             <div class="flex gap-4 overflow-x-auto scrollbar-hide" style="scroll-snap-type: x mandatory;" id="mobile-stats">
@@ -117,7 +117,7 @@
     </section>
 
     <!-- Craftsmanship Section -->
-    <section class="bg-black py-[30px]">
+    <section class="bg-black py-[30px] pb-10">
         <div class="container mx-auto px-4 md:px-0">
             <h2 id="craftsmanship-title" class="text-white text-[32px] lg:text-[40px] font-semibold mb-8">Craftsmanship details</h2>
             <p id="craftsmanship-description" class="text-gray-400 text-base mb-16 max-w-3xl">Trust and attention featuring engineering professionals and nuova della competenza automobilistica</p>
@@ -130,7 +130,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-black py-[60px]">
+    <section class="bg-black py-[60px] pb-10">
         <div class="container mx-auto px-4 md:px-0 text-center">
             <h2 id="cta-title" class="text-white text-[32px] lg:text-[40px] font-semibold mb-6">Begin Your Restoration Journey</h2>
             <p id="cta-description" class="text-gray-400 text-base mb-8 max-w-2xl mx-auto">Let us bring your classic automobile back to the with time same dedication and craftsmanship.</p>
@@ -312,7 +312,7 @@
                 
                 // Use specific 0 images for projects with custom galleries
                 if (projectId === 'ferrari-365-daytona') {
-                    heroImage = 'images/daytona0.png';
+                    heroImage = 'images/daytona0.jpg';
                 } else if (projectId === 'fiat-500f') {
                     heroImage = 'images/fiat500f0.jpg';
                 } else if (projectId === 'cisitalia-202') {
@@ -431,11 +431,26 @@
             
             // Special handling for Ferrari Daytona project
             if (projectId === 'ferrari-365-daytona') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/daytona0.jpg',
+                    'images/daytona1.png', 
+                    'images/daytona2.png',
+                    'images/daytona3.jpg',
+                    'images/daytona4.png',
+                    'images/daytona5.png',
+                    'images/daytona6.png',
+                    'images/daytona7.png'
+                ];
+                
                 // Main large image
                 const mainImageContainer = document.createElement('div');
-                mainImageContainer.innerHTML = `
-                    <img src="images/daytona0.png" alt="Ferrari Daytona Main" class="w-full h-96 lg:h-[600px] object-cover rounded-lg mb-6">
-                `;
+                const mainImg = document.createElement('img');
+                mainImg.src = 'images/daytona0.jpg';
+                mainImg.alt = 'Ferrari Daytona Main';
+                mainImg.className = 'w-full h-96 lg:h-[600px] object-cover rounded-lg mb-6 cursor-pointer hover:opacity-90 transition-opacity';
+                mainImg.addEventListener('click', () => window.openGalleryModal(0));
+                mainImageContainer.appendChild(mainImg);
                 gallery.appendChild(mainImageContainer);
                 
                 // Grid layout matching the design
@@ -445,35 +460,71 @@
                 // Row 1: Two images side by side
                 const row1 = document.createElement('div');
                 row1.className = 'grid grid-cols-2 gap-6';
-                row1.innerHTML = `
-                    <img src="images/daytona1.png" alt="Ferrari Daytona Detail 1" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                    <img src="images/daytona2.png" alt="Ferrari Daytona Detail 2" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                `;
+                
+                const img1 = document.createElement('img');
+                img1.src = 'images/daytona1.png';
+                img1.alt = 'Ferrari Daytona Detail 1';
+                img1.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img1.addEventListener('click', () => window.openGalleryModal(1));
+                
+                const img2 = document.createElement('img');
+                img2.src = 'images/daytona2.png';
+                img2.alt = 'Ferrari Daytona Detail 2';
+                img2.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img2.addEventListener('click', () => window.openGalleryModal(2));
+                
+                row1.appendChild(img1);
+                row1.appendChild(img2);
                 gridContainer.appendChild(row1);
                 
                 // Row 2: One large image
                 const row2 = document.createElement('div');
-                row2.innerHTML = `
-                    <img src="images/daytona3.png" alt="Ferrari Daytona Detail 3" class="w-full h-64 lg:h-80 object-cover rounded-lg">
-                `;
+                const img3 = document.createElement('img');
+                img3.src = 'images/daytona3.jpg';
+                img3.alt = 'Ferrari Daytona Detail 3';
+                img3.className = 'w-full h-64 lg:h-80 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img3.addEventListener('click', () => window.openGalleryModal(3));
+                row2.appendChild(img3);
                 gridContainer.appendChild(row2);
                 
                 // Row 3: Two images side by side
                 const row3 = document.createElement('div');
                 row3.className = 'grid grid-cols-2 gap-6';
-                row3.innerHTML = `
-                    <img src="images/daytona4.png" alt="Ferrari Daytona Detail 4" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                    <img src="images/daytona5.png" alt="Ferrari Daytona Detail 5" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                `;
+                
+                const img4 = document.createElement('img');
+                img4.src = 'images/daytona4.png';
+                img4.alt = 'Ferrari Daytona Detail 4';
+                img4.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img4.addEventListener('click', () => window.openGalleryModal(4));
+                
+                const img5 = document.createElement('img');
+                img5.src = 'images/daytona5.png';
+                img5.alt = 'Ferrari Daytona Detail 5';
+                img5.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img5.addEventListener('click', () => window.openGalleryModal(5));
+                
+                row3.appendChild(img4);
+                row3.appendChild(img5);
                 gridContainer.appendChild(row3);
                 
                 // Row 4: Two images side by side
                 const row4 = document.createElement('div');
                 row4.className = 'grid grid-cols-2 gap-6';
-                row4.innerHTML = `
-                    <img src="images/daytona6.png" alt="Ferrari Daytona Detail 6" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                    <img src="images/daytona7.png" alt="Ferrari Daytona Detail 7" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                `;
+                
+                const img6 = document.createElement('img');
+                img6.src = 'images/daytona6.png';
+                img6.alt = 'Ferrari Daytona Detail 6';
+                img6.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img6.addEventListener('click', () => window.openGalleryModal(6));
+                
+                const img7 = document.createElement('img');
+                img7.src = 'images/daytona7.png';
+                img7.alt = 'Ferrari Daytona Detail 7';
+                img7.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                img7.addEventListener('click', () => window.openGalleryModal(7));
+                
+                row4.appendChild(img6);
+                row4.appendChild(img7);
                 gridContainer.appendChild(row4);
                 
                 gallery.appendChild(gridContainer);
@@ -482,6 +533,23 @@
             
             // Special handling for Fiat 500F project
             if (projectId === 'fiat-500f') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/fiat500f0.jpg',
+                    'images/fiat500f1.jpg',
+                    'images/fiat500f2.jpg',
+                    'images/fiat500f3.jpg',
+                    'images/fiat500f4.jpg',
+                    'images/fiat500f5.jpg',
+                    'images/fiat500f6.jpg',
+                    'images/fiat500f7.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
+                
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -533,6 +601,22 @@
             
             // Special handling for Cisitalia 202 project
             if (projectId === 'cisitalia-202') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/cistalia2020.jpg',
+                    'images/cistalia2021.jpg',
+                    'images/cistalia2022.jpg',
+                    'images/cistalia2023.jpg',
+                    'images/cistalia2024.jpg',
+                    'images/cistalia2025.jpg',
+                    'images/cistalia2026.jpg',
+                    'images/cistalia2027.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -584,6 +668,22 @@
             
             // Special handling for Alfa Romeo 1900 project
             if (projectId === 'alfa-romeo-1900') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/alfaromeo19000.jpg',
+                    'images/alfaromeo19001.jpg',
+                    'images/alfaromeo19002.jpg',
+                    'images/alfaromeo19003.jpg',
+                    'images/alfaromeo19004.jpg',
+                    'images/alfaromeo19005.jpg',
+                    'images/alfaromeo19006.jpg',
+                    'images/alfaromeo19007.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -636,6 +736,22 @@
             
             // Special handling for Chrysler GS-1 Ghia project
             if (projectId === 'chrysler-gs-1') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/chrysler0.jpg',
+                    'images/chrysler1.jpg',
+                    'images/chrysler2.jpg',
+                    'images/chrysler3.jpg',
+                    'images/chrysler4.jpg',
+                    'images/chrysler5.jpg',
+                    'images/chrysler6.jpg',
+                    'images/chrysler7.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -687,6 +803,22 @@
             
             // Special handling for Lancia Aurelia 2000 B52 project
             if (projectId === 'lancia-aurelia-b52') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/aurelia0.jpg',
+                    'images/aurelia1.jpg',
+                    'images/aurelia2.jpg',
+                    'images/aurelia3.jpg',
+                    'images/aurelia4.jpg',
+                    'images/aurelia5.jpg',
+                    'images/aurelia6.jpg',
+                    'images/aurelia7.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -738,6 +870,22 @@
             
             // Special handling for Alfa Romeo 6C 2300 Cabriolet Worblaufen project
             if (projectId === 'alfa-romeo-6c-2300') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/alfaromeo6c2300cabriolet0.jpg',
+                    'images/alfaromeo6c2300cabriolet1.jpg',
+                    'images/alfaromeo6c2300cabriolet2.jpg',
+                    'images/alfaromeo6c2300cabriolet3.jpg',
+                    'images/alfaromeo6c2300cabriolet4.jpg',
+                    'images/alfaromeo6c2300cabriolet5.jpg',
+                    'images/alfaromeo6c2300cabriolet6.jpg',
+                    'images/alfaromeo6c2300cabriolet7.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -789,6 +937,22 @@
             
             // Special handling for Alfa Romeo 6C 2500 SS Cabriolet Pininfarina project
             if (projectId === 'alfa-romeo-6c-2500-pintinfarina') {
+                // Set up gallery images array for modal
+                galleryImages = [
+                    'images/alfaromeo6c25000.jpg',
+                    'images/alfaromeo6c25001.jpg',
+                    'images/alfaromeo6c25002.jpg',
+                    'images/alfaromeo6c25003.jpg',
+                    'images/alfaromeo6c25004.jpg',
+                    'images/alfaromeo6c25005.jpg',
+                    'images/alfaromeo6c25006.jpg',
+                    'images/alfaromeo6c25007.jpg'
+                ];
+                
+                // Use the helper function to make existing gallery clickable
+                setTimeout(() => {
+                    addModalToExistingGallery();
+                }, 100);
                 // Main large image
                 const mainImageContainer = document.createElement('div');
                 mainImageContainer.innerHTML = `
@@ -841,12 +1005,18 @@
             // Default gallery layout for other projects
             if (images.length === 0) return;
             
+            // Set up gallery images for modal (use provided images array)
+            galleryImages = [...images];
+            
             // Main large image
             if (images[0]) {
                 const mainImageContainer = document.createElement('div');
-                mainImageContainer.innerHTML = `
-                    <img src="${images[0]}" alt="Project Image" class="w-full h-96 lg:h-[600px] object-cover rounded-lg">
-                `;
+                const mainImg = document.createElement('img');
+                mainImg.src = images[0];
+                mainImg.alt = 'Project Image';
+                mainImg.className = 'w-full h-96 lg:h-[600px] object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                mainImg.addEventListener('click', () => window.openGalleryModal(0));
+                mainImageContainer.appendChild(mainImg);
                 gallery.appendChild(mainImageContainer);
             }
             
@@ -857,13 +1027,40 @@
                 
                 for (let i = 1; i < images.length && i < 5; i++) {
                     const imageContainer = document.createElement('div');
-                    imageContainer.innerHTML = `
-                        <img src="${images[i]}" alt="Project Detail ${i}" class="w-full h-48 lg:h-64 object-cover rounded-lg">
-                    `;
+                    const img = document.createElement('img');
+                    img.src = images[i];
+                    img.alt = `Project Detail ${i}`;
+                    img.className = 'w-full h-48 lg:h-64 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+                    img.addEventListener('click', () => window.openGalleryModal(i));
+                    imageContainer.appendChild(img);
                     gridContainer.appendChild(imageContainer);
                 }
                 
                 gallery.appendChild(gridContainer);
+            }
+            
+            // Make all existing gallery images clickable for projects that don't have special handling above
+            setTimeout(() => {
+                addModalToExistingGallery();
+            }, 100);
+        }
+        
+        // Helper function to add modal functionality to existing galleries that use innerHTML
+        function addModalToExistingGallery() {
+            const gallery = document.getElementById('project-gallery');
+            const galleryImgs = gallery.querySelectorAll('img');
+            
+            if (galleryImgs.length > 0) {
+                // If galleryImages wasn't set yet, extract from existing images
+                if (galleryImages.length === 0) {
+                    galleryImages = Array.from(galleryImgs).map(img => img.src);
+                }
+                
+                // Add click handlers to existing images
+                galleryImgs.forEach((img, index) => {
+                    img.classList.add('cursor-pointer', 'hover:opacity-90', 'transition-opacity');
+                    img.addEventListener('click', () => window.openGalleryModal(index));
+                });
             }
         }
         
@@ -927,6 +1124,9 @@
             // Initialize language switcher
             const languageSwitcher = new LanguageSwitcher();
             
+            // Initialize gallery modal first
+            initializeGalleryModal();
+            
             // Override language toggle to update project content
             const originalToggleLanguage = languageSwitcher.toggleLanguage.bind(languageSwitcher);
             languageSwitcher.toggleLanguage = function() {
@@ -940,6 +1140,126 @@
             // Load project
             loadProject();
         });
+    </script>
+
+    <!-- Image Gallery Modal -->
+    <div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex items-center justify-center">
+        <!-- Close Button -->
+        <button id="closeModal" class="absolute top-6 right-6 z-60 text-white hover:text-gray-300 transition-colors">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        
+        <!-- Previous Arrow -->
+        <button id="prevImage" class="absolute left-6 top-1/2 transform -translate-y-1/2 z-60 text-white hover:text-gray-300 transition-colors">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        
+        <!-- Next Arrow -->
+        <button id="nextImage" class="absolute right-6 top-1/2 transform -translate-y-1/2 z-60 text-white hover:text-gray-300 transition-colors">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+        
+        <!-- Image Container -->
+        <div class="w-full h-full flex items-center justify-center p-6">
+            <img id="modalImage" src="" alt="" class="max-w-full max-h-full object-contain">
+        </div>
+        
+        <!-- Image Counter -->
+        <div id="imageCounter" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white text-sm">
+            <span id="currentImageIndex">1</span> / <span id="totalImages">1</span>
+        </div>
+    </div>
+
+    <script>
+        // Gallery Modal Functionality  
+        let currentImageIndex = 0;
+        let galleryImages = [];
+        
+        function initializeGalleryModal() {
+            const modal = document.getElementById('galleryModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeBtn = document.getElementById('closeModal');
+            const prevBtn = document.getElementById('prevImage');
+            const nextBtn = document.getElementById('nextImage');
+            const currentIndexSpan = document.getElementById('currentImageIndex');
+            const totalImagesSpan = document.getElementById('totalImages');
+            
+            // Close modal functions
+            function closeModal() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Open modal function
+            function openModal(imageIndex) {
+                currentImageIndex = imageIndex;
+                updateModalImage();
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            // Update modal image
+            function updateModalImage() {
+                if (galleryImages.length > 0) {
+                    modalImage.src = galleryImages[currentImageIndex];
+                    modalImage.alt = `Gallery image ${currentImageIndex + 1}`;
+                    currentIndexSpan.textContent = currentImageIndex + 1;
+                    totalImagesSpan.textContent = galleryImages.length;
+                }
+            }
+            
+            // Navigate to previous image
+            function prevImage() {
+                currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : galleryImages.length - 1;
+                updateModalImage();
+            }
+            
+            // Navigate to next image
+            function nextImage() {
+                currentImageIndex = currentImageIndex < galleryImages.length - 1 ? currentImageIndex + 1 : 0;
+                updateModalImage();
+            }
+            
+            // Event listeners
+            closeBtn.addEventListener('click', closeModal);
+            prevBtn.addEventListener('click', prevImage);
+            nextBtn.addEventListener('click', nextImage);
+            
+            // Click outside image to close
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!modal.classList.contains('hidden')) {
+                    switch(e.key) {
+                        case 'Escape':
+                            closeModal();
+                            break;
+                        case 'ArrowLeft':
+                            prevImage();
+                            break;
+                        case 'ArrowRight':
+                            nextImage();
+                            break;
+                    }
+                }
+            });
+            
+            // Make this function globally available
+            window.openGalleryModal = openModal;
+        }
+        
+        // Modal initialization is now handled in the main DOMContentLoaded event
     </script>
 </body>
 </html>
