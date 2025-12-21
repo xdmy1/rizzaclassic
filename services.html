@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="services-page-title">Servizi Restauro Auto d'Epoca | Rizza Classic - Carrozzeria, Meccanica, Tapezzeria</title>
+    <meta name="description" data-translate="services-page-description" content="Servizi specializzati di restauro auto d'epoca: carrozzeria, meccanica, tapezzeria, consulenza. Esperti nel restauro Ferrari, Alfa Romeo, auto storiche a Roma.">
+    <meta name="keywords" data-translate="services-page-keywords" content="servizi restauro auto d'epoca, carrozzeria auto storiche, officina meccanica classica, tapezzeria auto d'epoca, consulenza restauro, impianti elettrici auto storiche">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rizza Classic">
+    <meta property="og:title" data-translate="services-og-title" content="Servizi Restauro Auto d'Epoca | Rizza Classic">
+    <meta property="og:description" data-translate="services-og-description" content="Servizi completi di restauro auto d'epoca: carrozzeria, meccanica, tapezzeria e consulenza specializzata. 30+ anni di esperienza a Roma.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rizzaclassic.com/services.html">
+    <meta property="og:image" content="https://rizzaclassic.com/images/hero-background.png">
+    <meta property="og:locale" content="it_IT">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-translate="services-twitter-title" content="Servizi Restauro Auto d'Epoca | Rizza Classic">
+    <meta name="twitter:description" data-translate="services-twitter-description" content="Servizi specializzati di restauro auto storiche. Carrozzeria, meccanica, tapezzeria. 30+ anni di esperienza a Roma.">
+    <meta name="twitter:image" content="https://rizzaclassic.com/images/hero-background.png">
+    <link rel="canonical" href="https://rizzaclassic.com/services.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Noto Serif', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Noto Serif', serif;
+                font-size: 32px;
+            }
+            
+            h1 {
+                line-height: 150%;
+                letter-spacing: -0.02em;
+            }
+            
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0;
+            }
+            
+            @media (min-width: 1024px) {
+                h1, h2, h3, h4, h5, h6 {
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        @layer components {
+            .service-card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                height: 300px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            
+            .service-card:hover {
+                transform: translateY(-4px);
+            }
+            
+            .service-card img {
+                transition: transform 0.7s ease;
+            }
+            
+            .service-card:hover img {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-clip">
+    <!-- Hero Section -->
+    <section class="relative h-fit pt-24 bg-cover bg-center bg-no-repeat flex items-center justify-center" >
+        <div class="container text-white mx-auto py-4 md:py-10 px-4 md:px-0 relative z-10 text-start">
+            <h1 class="text-[32px] md:text-[48px] font-semibold leading-[120%] tracking-[-0.02em] mb-4" data-translate="services-hero-title">Nostri Servizi</h1>
+            <p class="text-[#B0B0B0] text-lg max-w-2xl " data-translate="services-hero-subtitle">Esperienza e professionalità al servizio della tua passione.</p>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="bg-black py-[60px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Services Grid -->
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Card 1 - Carrozzeria -->
+                <div class="service-card bg-gradient-to-b from-[#1A1A1A] to-black" onclick="window.location.href='service-detail.html?service=carrozzeria'">
+                    <img src="images/carozzeria.png" alt="Servizio carrozzeria restauro auto d'epoca Roma - riparazione e verniciatura auto storiche" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold" data-translate="service-carrozzeria-title">Carrozzeria</h3>
+                            <img src="images/arrow-right.svg" alt="Scopri servizi carrozeria auto d'epoca" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 - Officina Meccanica -->
+                <div class="service-card bg-gradient-to-b from-[#1A1A1A] to-black" onclick="window.location.href='service-detail.html?service=meccanica'">
+                    <img src="images/meccanica.png" alt="Officina meccanica specializzata restauro motori auto storiche Ferrari Alfa Romeo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold" data-translate="service-meccanica-title">Officina Meccanica</h3>
+                            <img src="images/arrow-right.svg" alt="Scopri servizi officina meccanica auto d'epoca" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 - Tapezzeria -->
+                <div class="service-card bg-gradient-to-b from-[#1A1A1A] to-black" onclick="window.location.href='service-detail.html?service=tapezzeria'">
+                    <img src="images/tapezzeria.png" alt="Tapezzeria restauro interni auto classiche - sedili e rivestimenti originali" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold" data-translate="service-tapezzeria-title">Tapezzeria</h3>
+                            <img src="images/arrow-right.svg" alt="Scopri servizi tapezzeria auto d'epoca" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 - Carrozzeria (Alternative) -->
+                <div class="service-card bg-gradient-to-b from-[#1A1A1A] to-black" onclick="window.location.href='service-detail.html?service=carrozzeria'">
+                    <img src="images/ourwork1.png" alt="Restauro carrozzeria Ferrari - lavori di alta qualità" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold" data-translate="service-carrozzeria-alt-title">Carrozzeria</h3>
+                            <img src="images/arrow-right.svg" alt="Scopri lavori carrozzeria Ferrari" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 - Consulenza -->
+                <div class="service-card bg-gradient-to-b from-[#1A1A1A] to-black" onclick="window.location.href='service-detail.html?service=consulenza'">
+                    <img src="images/consuleza.png" alt="Consulenza restauro auto d'epoca - valutazione e perizia auto storiche" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold" data-translate="service-consulenza-title">Consulenza Acquisto Vetture</h3>
+                            <img src="images/arrow-right.svg" alt="Richiedi consulenza restauro auto d'epoca" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 - Impianti Elettrici -->
+                <div class="service-card bg-gradient-to-b from-[#1A1A1A] to-black" onclick="window.location.href='service-detail.html?service=elettrici'">
+                    <img src="images/ourwork2.png" alt="Impianti elettrici auto d'epoca - restauro sistemi elettrici originali" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold" data-translate="service-elettrici-title">Impianti Elettrici</h3>
+                            <img src="images/arrow-right.svg" alt="Scopri servizi impianti elettrici auto storiche" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Expertise Section -->
+    <section class="bg-black py-[60px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-8" data-translate="expertise-title">Our expertise</h2>
+            </div>
+
+            <!-- Expertise Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Complete Restoration -->
+                <div class="text-white">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="expertise-restoration-title">Complete Restoration</h3>
+                    <p class="text-gray-400 text-base leading-relaxed" data-translate="expertise-restoration-desc">We bring classic and rare hand vintage vehicles from the 40s to 70s, bringing them back to their original glory. With meticulous attention to authenticity and period-correct details.</p>
+                </div>
+
+                <!-- Precision Maintenance -->
+                <div class="text-white">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="expertise-maintenance-title">Precision Maintenance</h3>
+                    <p class="text-gray-400 text-base leading-relaxed" data-translate="expertise-maintenance-desc">Regular maintenance and expert care for your classic cars using tools and solutions that keep their engines and components working flawlessly and safely every vintage value.</p>
+                </div>
+
+                <!-- Bespoke Customization -->
+                <div class="text-white">
+                    <h3 class="text-xl font-semibold mb-4" data-translate="expertise-customization-title">Bespoke Customization</h3>
+                    <p class="text-gray-400 text-base leading-relaxed" data-translate="expertise-customization-desc">Careful modifications and custom builds that respect the car's heritage while incorporating tasteful modern conveniences. Every project reflects the vehicle's character.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-black py-[60px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-8" data-translate="testimonials-title">What our clients say</h2>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-8 rounded-lg">
+                    <div class="mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <p class="text-white text-base mb-6" data-translate="testimonial-1-text">Flawless panel gaps, perfect color match, and weekly photo updates during the restoration. The attention to originality was exceptional.</p>
+                    <div>
+                        <p class="text-white font-semibold" data-translate="testimonial-1-name">Andreas Müller</p>
+                        <p class="text-gray-400 text-sm" data-translate="testimonial-1-car">Alfa Romeo Giulia Sprint GT - 230ch</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-8 rounded-lg">
+                    <div class="mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <p class="text-white text-base mb-6" data-translate="testimonial-2-text">Flawless panel gaps, perfect color match, and weekly photo updates during the restoration. The attention to originality was exceptional.</p>
+                    <div>
+                        <p class="text-white font-semibold" data-translate="testimonial-2-name">Andreas Müller</p>
+                        <p class="text-gray-400 text-sm" data-translate="testimonial-2-car">Alfa Romeo Giulia Sprint GT - 230ch</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-8 rounded-lg">
+                    <div class="mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                    <p class="text-white text-base mb-6" data-translate="testimonial-3-text">Flawless panel gaps, perfect color match, and weekly photo updates during the restoration. The attention to originality was exceptional.</p>
+                    <div>
+                        <p class="text-white font-semibold" data-translate="testimonial-3-name">Andreas Müller</p>
+                        <p class="text-gray-400 text-sm" data-translate="testimonial-3-car">Alfa Romeo Giulia Sprint GT - 230ch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0 text-center">
+            <h2 class="text-white text-[32px] lg:text-[48px] font-semibold mb-4" data-translate="cta-title">Ready to restore your Classic?</h2>
+            <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto" data-translate="cta-subtitle">Let us bring your classic automobile back to life with the same dedication and craftsmanship.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-black px-9 py-4 rounded-sm font-medium hover:bg-gray-100 transition-colors duration-200" data-translate="cta-start-project">
+                    Start a Project
+                </a>
+                <a href="services.html" class="border border-white text-white px-9 py-4 rounded-sm font-medium hover:bg-white hover:text-black transition-colors duration-200" data-translate="cta-view-services">
+                    View more services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-b from-[#0D0D0D] to-black border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-12 xl:px-16 py-12 lg:py-16">
+            <!-- Desktop Layout -->
+            <div class="hidden lg:flex justify-between mb-12">
+                <!-- Contacts Section -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-contacts">Contatti</h3>
+                    <div class="space-y-4 flex  items-end justify-center gap-5">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-email">Email</p>
+                            <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors text-sm">info@rizzaclassic.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-phone">Numero di telefono</p>
+                            <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors text-sm">+39 346 6383 339</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-address">Indirizzo</p>
+                            <p class="text-white text-sm">Via Prenestina, 912 00155 Roma (RM)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Sections -->
+                <div class="flex gap-16">
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-rizza-classic">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="#chi-siamo" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-about">Chi siamo</a>
+                            <a href="services.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-services">Servizi</a>
+                            <a href="#extra-services" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-extra-services">Servizi extra</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-our-work">Il nostro lavoro</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-portfolio">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-contacts-link">Contatti</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-services-list">Servizi</h3>
+                        <div class="space-y-3">
+                            <a href="#carrozzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-carrozzeria">Carrozzeria</a>
+                            <a href="#officina" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-officina">Officina Meccanica</a>
+                            <a href="#tapezzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-tapezzeria">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Layout -->
+            <div class="lg:hidden mb-12">
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Contacts Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Contacts</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Email</p>
+                                <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors">info@rizzaclassic.com</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Phone number</p>
+                                <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors">+39 346 6383 339</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Address</p>
+                                <p class="text-white">Via Prenestina, 912 00155 Roma (RM)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="#chi-siamo" class="block text-gray-400 hover:text-white transition-colors">About us</a>
+                            <a href="services.html" class="block text-gray-400 hover:text-white transition-colors">Services</a>
+                            <a href="#extra-services" class="block text-gray-400 hover:text-white transition-colors">Extra services</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Our work</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors">Contacts</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Services</h3>
+                        <div class="space-y-3">
+                            <a href="#carrozzeria" class="block text-gray-400 hover:text-white transition-colors">Carrozzeria</a>
+                            <a href="#officina" class="block text-gray-400 hover:text-white transition-colors">Officina Meccanica</a>
+                            <a href="#tapezzeria" class="block text-gray-400 hover:text-white transition-colors">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                    <!-- Copyright -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-gray-500 text-sm">©</span>
+                        <span class="text-gray-400 text-sm">Rizza Classic</span>
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="flex gap-6">
+                        <a href="#terms" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-terms">Termini e Condizioni</a>
+                        <a href="#privacy" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Large Brand Name -->
+    <div class="w-screen overflow-x-clip overflow-x-hidden">
+        <img src="images/RIZZACLASSIC.svg" alt="Rizza Classic - Restauro auto d'epoca e auto storiche Roma" class="w-full h-auto select-none pointer-events-none">
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        // Services page management
+        class ServicesPage {
+            constructor() {
+                this.currentLang = localStorage.getItem('language') || 'it';
+                this.services = null;
+                this.init();
+                this.bindLanguageChange();
+            }
+
+            async init() {
+                await this.loadServices();
+                this.renderServiceCards();
+                this.initializeLanguageSwitcher();
+            }
+
+            async loadServices() {
+                try {
+                    const response = await fetch('data/services.json');
+                    this.services = await response.json();
+                } catch (error) {
+                    console.error('Error loading services:', error);
+                }
+            }
+
+            renderServiceCards() {
+                if (!this.services) return;
+
+                const grid = document.getElementById('services-grid');
+                if (!grid) return;
+
+                // Clear existing content
+                grid.innerHTML = '';
+
+                // Service order and their image paths
+                const serviceOrder = [
+                    { id: 'carrozzeria', image: 'images/carozzeria.png' },
+                    { id: 'meccanica', image: 'images/officinameccanica.png' },
+                    { id: 'tapezzeria', image: 'images/tapezzeria.png' },
+                    { id: 'consulenza', image: 'images/consulenza.png' },
+                    { id: 'elettrici', image: 'images/elettrici.png' },
+                    { id: 'supportogare', image: 'images/supportogare.png' }
+                ];
+
+                serviceOrder.forEach(serviceInfo => {
+                    const service = this.services[serviceInfo.id];
+                    if (service) {
+                        const serviceCard = this.createServiceCard(service, serviceInfo.image);
+                        grid.appendChild(serviceCard);
+                    }
+                });
+            }
+
+            createServiceCard(service, imagePath) {
+                const card = document.createElement('div');
+                card.className = 'service-card bg-gradient-to-b from-[#1A1A1A] to-black cursor-pointer';
+                card.onclick = () => window.location.href = `service-detail.html?service=${service.id}`;
+
+                const title = service.title[this.currentLang];
+                const altText = this.getAltText(service.id);
+
+                card.innerHTML = `
+                    <img src="${imagePath}" alt="${altText}" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-white text-xl font-semibold">${title}</h3>
+                            <img src="images/arrow-right.svg" alt="Scopri ${title}" class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1">
+                        </div>
+                    </div>
+                `;
+
+                return card;
+            }
+
+            getAltText(serviceId) {
+                const altTexts = {
+                    'carrozzeria': 'Servizio carrozzeria restauro auto d\'epoca Roma - riparazione e verniciatura auto storiche',
+                    'meccanica': 'Officina meccanica specializzata restauro motori auto storiche Ferrari Alfa Romeo',
+                    'tapezzeria': 'Tapezzeria restauro interni auto classiche - sedili e rivestimenti originali',
+                    'consulenza': 'Consulenza restauro auto d\'epoca - valutazione e perizia auto storiche',
+                    'elettrici': 'Impianti elettrici auto d\'epoca - restauro sistemi elettrici originali',
+                    'supportogare': 'Supporto gare auto d\'epoca - assistenza tecnica competizioni automobilistiche'
+                };
+                return altTexts[serviceId] || '';
+            }
+
+            initializeLanguageSwitcher() {
+                // Initialize language switcher if it exists
+                if (window.LanguageSwitcher) {
+                    const languageSwitcher = new window.LanguageSwitcher();
+                }
+            }
+
+            bindLanguageChange() {
+                // Listen for language change events
+                document.addEventListener('languageChanged', (e) => {
+                    this.currentLang = e.detail.language;
+                    this.renderServiceCards();
+                });
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new ServicesPage();
+        });
+    </script>
+</body>
+</html>

@@ -30,7 +30,7 @@ class LuxuryNavigation {
                         <span data-translate="nav-chi-siamo">Chi Siamo</span>
                         <span class="nav-underline"></span>
                     </a>
-                    <a href="#servizi" class="nav-link relative text-white text-base">
+                    <a href="services.html" class="nav-link relative text-white text-base">
                         <span data-translate="nav-servizi">Servizi</span>
                         <span class="nav-underline"></span>
                     </a>
@@ -92,7 +92,7 @@ class LuxuryNavigation {
                             <a href="#chi-siamo" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
                                 <span data-translate="nav-chi-siamo">Chi Siamo</span>
                             </a>
-                            <a href="#servizi" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
+                            <a href="services.html" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
                                 <span data-translate="nav-servizi">Servizi</span>
                             </a>
                             <a href="restorations.html" class="mobile-nav-link block text-white text-4xl font-light transition-colors duration-200 hover:text-amber-300">
@@ -501,6 +501,7 @@ class LanguageSwitcher {
                 'hero-contact-btn': 'Contattaci',
                 
                 // Statistics
+                'stats-title': '30+ Anni di Esperienza nel Restauro Auto d\'Epoca',
                 'stats-experience': 'Anni di Esperienza',
                 'stats-restorations': 'Restauri Completati',
                 'stats-satisfaction': 'Soddisfazione Clienti',
@@ -599,7 +600,49 @@ class LanguageSwitcher {
                 'project-engine-label': 'Motore',
                 'project-production-label': 'Produzione',
                 'cta-start-project': 'Inizia un Progetto',
-                'cta-view-projects': 'Visualizza Altri Progetti'
+                'cta-view-projects': 'Visualizza Altri Progetti',
+                
+                // Services Page
+                'services-page-title': 'Servizi Restauro Auto d\'Epoca | Rizza Classic',
+                'services-page-description': 'Servizi specializzati di restauro auto d\'epoca: carrozzeria, meccanica, tapezzeria, consulenza. Esperti nel restauro Ferrari, Alfa Romeo, auto storiche a Roma.',
+                'services-page-keywords': 'servizi restauro auto d\'epoca, carrozzeria auto storiche, officina meccanica classica, tapezzeria auto d\'epoca, consulenza restauro, impianti elettrici auto storiche',
+                'services-og-title': 'Servizi Restauro Auto d\'Epoca | Rizza Classic',
+                'services-og-description': 'Servizi completi di restauro auto d\'epoca: carrozzeria, meccanica, tapezzeria e consulenza specializzata. 30+ anni di esperienza a Roma.',
+                'services-twitter-title': 'Servizi Restauro Auto d\'Epoca | Rizza Classic',
+                'services-twitter-description': 'Servizi specializzati di restauro auto storiche. Carrozzeria, meccanica, tapezzeria. 30+ anni di esperienza a Roma.',
+                'services-hero-title': 'Nostri Servizi',
+                'services-hero-subtitle': 'Esperienza e professionalità al servizio della tua passione.',
+                'service-carrozzeria-title': 'Carrozzeria',
+                'service-meccanica-title': 'Officina Meccanica',
+                'service-tapezzeria-title': 'Tapezzeria',
+                'service-carrozzeria-alt-title': 'Carrozzeria',
+                'service-consulenza-title': 'Consulenza Acquisto Vetture',
+                'service-elettrici-title': 'Impianti Elettrici',
+                'service-supportogare-title': 'Supporto Gare',
+                'expertise-title': 'Our expertise',
+                'expertise-restoration-title': 'Restauro Completo',
+                'expertise-restoration-desc': 'Riportiamo veicoli d\'epoca rari degli anni \'40-\'70 al loro splendore originale. Con meticolosa attenzione all\'autenticità e ai dettagli d\'epoca.',
+                'expertise-maintenance-title': 'Manutenzione di Precisione',
+                'expertise-maintenance-desc': 'Manutenzione regolare ed esperta per le vostre auto classiche utilizzando strumenti e soluzioni che mantengono motori e componenti perfettamente funzionanti.',
+                'expertise-customization-title': 'Personalizzazione Su Misura',
+                'expertise-customization-desc': 'Modifiche attente e costruzioni personalizzate che rispettano l\'eredità dell\'auto incorporando moderne comodità di buon gusto.',
+                'testimonials-title': 'Cosa dicono i nostri clienti',
+                'testimonial-1-text': 'Spazi tra pannelli perfetti, corrispondenza perfetta del colore e aggiornamenti fotografici settimanali durante il restauro. L\'attenzione all\'originalità è stata eccezionale.',
+                'testimonial-1-name': 'Andreas Müller',
+                'testimonial-1-car': 'Alfa Romeo Giulia Sprint GT - 230ch',
+                'testimonial-2-text': 'Spazi tra pannelli perfetti, corrispondenza perfetta del colore e aggiornamenti fotografici settimanali durante il restauro. L\'attenzione all\'originalità è stata eccezionale.',
+                'testimonial-2-name': 'Andreas Müller',
+                'testimonial-2-car': 'Alfa Romeo Giulia Sprint GT - 230ch',
+                'testimonial-3-text': 'Spazi tra pannelli perfetti, corrispondenza perfetta del colore e aggiornamenti fotografici settimanali durante il restauro. L\'attenzione all\'originalità è stata eccezionale.',
+                'testimonial-3-name': 'Andreas Müller',
+                'testimonial-3-car': 'Alfa Romeo Giulia Sprint GT - 230ch',
+                'cta-title': 'Pronto a restaurare la tua Classica?',
+                'cta-subtitle': 'Lascia che riportiamo la tua automobile classica alla vita con la stessa dedizione e maestria.',
+                'cta-view-services': 'Visualizza altri servizi',
+                
+                // Service Detail Page
+                'service-detail-cta-title': 'Inizia il Tuo Viaggio di Restauro',
+                'service-detail-cta-subtitle': 'Lascia che riportiamo la tua automobile classica alla vita con la stessa dedizione e maestria.'
             },
             en: {
                 // Navigation
@@ -616,6 +659,7 @@ class LanguageSwitcher {
                 'hero-contact-btn': 'Contact Us',
                 
                 // Statistics
+                'stats-title': '30+ Years of Experience in Classic Car Restoration',
                 'stats-experience': 'Years of Experience',
                 'stats-restorations': 'Completed Restorations',
                 'stats-satisfaction': 'Client Satisfaction',
@@ -714,7 +758,49 @@ class LanguageSwitcher {
                 'project-engine-label': 'Engine',
                 'project-production-label': 'Production',
                 'cta-start-project': 'Start a Project',
-                'cta-view-projects': 'View More Projects'
+                'cta-view-projects': 'View More Projects',
+                
+                // Services Page
+                'services-page-title': 'Classic Car Restoration Services | Rizza Classic',
+                'services-page-description': 'Specialized classic car restoration services: bodywork, mechanics, upholstery, consulting. Experts in Ferrari, Alfa Romeo, vintage cars in Rome.',
+                'services-page-keywords': 'classic car restoration services, vintage car bodywork, classic mechanical workshop, vintage car upholstery, restoration consulting, vintage car electrical systems',
+                'services-og-title': 'Classic Car Restoration Services | Rizza Classic',
+                'services-og-description': 'Complete classic car restoration services: bodywork, mechanics, upholstery and specialized consulting. 30+ years of experience in Rome.',
+                'services-twitter-title': 'Classic Car Restoration Services | Rizza Classic',
+                'services-twitter-description': 'Specialized vintage car restoration services. Bodywork, mechanics, upholstery. 30+ years of experience in Rome.',
+                'services-hero-title': 'Our Services',
+                'services-hero-subtitle': 'Experience and professionalism at the service of your passion.',
+                'service-carrozzeria-title': 'Bodywork',
+                'service-meccanica-title': 'Mechanical Workshop',
+                'service-tapezzeria-title': 'Upholstery',
+                'service-carrozzeria-alt-title': 'Bodywork',
+                'service-consulenza-title': 'Vehicle Purchase Consulting',
+                'service-elettrici-title': 'Electrical Systems',
+                'service-supportogare-title': 'Race Support',
+                'expertise-title': 'Our expertise',
+                'expertise-restoration-title': 'Complete Restoration',
+                'expertise-restoration-desc': 'We bring classic and rare hand vintage vehicles from the 40s to 70s, bringing them back to their original glory. With meticulous attention to authenticity and period-correct details.',
+                'expertise-maintenance-title': 'Precision Maintenance',
+                'expertise-maintenance-desc': 'Regular maintenance and expert care for your classic cars using tools and solutions that keep their engines and components working flawlessly and safely every vintage value.',
+                'expertise-customization-title': 'Bespoke Customization',
+                'expertise-customization-desc': 'Careful modifications and custom builds that respect the car\'s heritage while incorporating tasteful modern conveniences. Every project reflects the vehicle\'s character.',
+                'testimonials-title': 'What our clients say',
+                'testimonial-1-text': 'Flawless panel gaps, perfect color match, and weekly photo updates during the restoration. The attention to originality was exceptional.',
+                'testimonial-1-name': 'Andreas Müller',
+                'testimonial-1-car': 'Alfa Romeo Giulia Sprint GT - 230ch',
+                'testimonial-2-text': 'Flawless panel gaps, perfect color match, and weekly photo updates during the restoration. The attention to originality was exceptional.',
+                'testimonial-2-name': 'Andreas Müller',
+                'testimonial-2-car': 'Alfa Romeo Giulia Sprint GT - 230ch',
+                'testimonial-3-text': 'Flawless panel gaps, perfect color match, and weekly photo updates during the restoration. The attention to originality was exceptional.',
+                'testimonial-3-name': 'Andreas Müller',
+                'testimonial-3-car': 'Alfa Romeo Giulia Sprint GT - 230ch',
+                'cta-title': 'Ready to restore your Classic?',
+                'cta-subtitle': 'Let us bring your classic automobile back to life with the same dedication and craftsmanship.',
+                'cta-view-services': 'View more services',
+                
+                // Service Detail Page
+                'service-detail-cta-title': 'Begin Your Restoration Journey',
+                'service-detail-cta-subtitle': 'Let us bring your classic automobile back to life with the same dedication and craftsmanship.'
             }
         };
         this.init();
@@ -722,7 +808,9 @@ class LanguageSwitcher {
 
     init() {
         this.bindLanguageButtons();
+        // Apply stored language preference immediately on page load
         this.translatePage();
+        this.updateLanguageButtons();
     }
 
     bindLanguageButtons() {
@@ -775,18 +863,25 @@ class LanguageSwitcher {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Always initialize navigation and language switcher
     new LuxuryNavigation();
-    const servicesCarousel = new ServicesCarousel();
-    
-    // Initialize infinite scroll
-    const infiniteScroll = new InfiniteScroll('infinite-scroll');
-    
-    // Initialize language switcher
     new LanguageSwitcher();
     
-    // Update carousel on resize
-    window.addEventListener('resize', () => {
-        servicesCarousel.currentSlide = 0; // Reset to first slide
-        servicesCarousel.updateCarousel();
-    });
+    // Initialize services carousel only if it exists (on index page)
+    const servicesTrack = document.getElementById('services-track');
+    if (servicesTrack) {
+        const servicesCarousel = new ServicesCarousel();
+        
+        // Update carousel on resize
+        window.addEventListener('resize', () => {
+            servicesCarousel.currentSlide = 0; // Reset to first slide
+            servicesCarousel.updateCarousel();
+        });
+    }
+    
+    // Initialize infinite scroll only if the element exists (on index page)
+    const infiniteScrollElement = document.getElementById('infinite-scroll');
+    if (infiniteScrollElement) {
+        new InfiniteScroll('infinite-scroll');
+    }
 });

@@ -1,0 +1,800 @@
+{
+  "carrozzeria": {
+    "id": "carrozzeria",
+    "title": {
+      "it": "Carrozzeria",
+      "en": "Bodywork"
+    },
+    "subtitle": {
+      "it": "Dal 1949 restauriamo auto d'epoca con passione e maestria artigianale italiana",
+      "en": "Since 1949 we restore classic cars with passion and Italian craftsmanship"
+    },
+    "description": {
+      "it": "Rizza Classic è la divisione specializzata nella carrozzeria e nel restauro di automobili d'epoca. Dal 1949 operiamo con passione e dedizione, accumulando un'esperienza unica nel restauro di auto classiche attraverso l'evoluzione dell'automobile. Riportiamo alla vita l'antica bellezza e la storia di ogni veicolo d'epoca.",
+      "en": "Rizza Classic is the specialized division for bodywork and restoration of vintage automobiles. Since 1949 we have been operating with passion and dedication, accumulating unique experience in classic car restoration through the evolution of the automobile. We bring back to life the ancient beauty and history of every vintage vehicle."
+    },
+    "heroImage": "images/carozzeria.png",
+    "whatWeOffer": [
+      {
+        "title": {
+          "it": "Restauro Completo",
+          "en": "Complete Restoration"
+        },
+        "description": {
+          "it": "Restauro completo di auto d'epoca per riportarle al loro splendore originale, combinando innovazione e maestria artigianale italiana attraverso mesi di lavoro specializzato.",
+          "en": "Complete restoration of vintage cars to restore them to their original splendor, combining innovation and Italian craftsmanship through months of specialized work."
+        }
+      },
+      {
+        "title": {
+          "it": "Carrozzeria Specializzata",
+          "en": "Specialized Bodywork"
+        },
+        "description": {
+          "it": "Servizi di carrozzeria specializzati: smontaggio parti danneggiate, raddrizzatura carrozzeria, preparazione e verniciatura, lucidatura, riassemblaggio e rifinitura finale.",
+          "en": "Specialized bodywork services: disassembly of damaged parts, body straightening, preparation and painting, polishing, reassembly and final finishing."
+        }
+      },
+      {
+        "title": {
+          "it": "Personalizzazione e Customizzazione",
+          "en": "Customization Services"
+        },
+        "description": {
+          "it": "Servizi di personalizzazione per rendere le auto uniche e distintive, mantenendo sempre il rispetto per l'autenticità e il carattere originale del veicolo d'epoca.",
+          "en": "Customization services to make cars unique and distinctive, always maintaining respect for authenticity and the original character of the vintage vehicle."
+        }
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "it": "Smontaggio",
+          "en": "Disassembly"
+        },
+        "description": {
+          "it": "Smontaggio accurato di tutte le parti danneggiate e componenti della carrozzeria per accedere alle aree di lavoro.",
+          "en": "Careful disassembly of all damaged parts and bodywork components to access work areas."
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "it": "Raddrizzatura Carrozzeria",
+          "en": "Body Straightening"
+        },
+        "description": {
+          "it": "Raddrizzatura professionale della carrozzeria utilizzando tecniche specializzate per ripristinare la forma originale.",
+          "en": "Professional body straightening using specialized techniques to restore the original shape."
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "it": "Preparazione Superficie",
+          "en": "Surface Preparation"
+        },
+        "description": {
+          "it": "Preparazione meticolosa delle superfici per garantire una perfetta adesione dei materiali di finitura.",
+          "en": "Meticulous surface preparation to ensure perfect adhesion of finishing materials."
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "it": "Simulazione Colore",
+          "en": "Color Simulation"
+        },
+        "description": {
+          "it": "Analisi e simulazione del colore originale per garantire una corrispondenza perfetta con la vernice d'epoca.",
+          "en": "Analysis and simulation of the original color to ensure perfect matching with vintage paint."
+        }
+      },
+      {
+        "step": "05",
+        "title": {
+          "it": "Verniciatura",
+          "en": "Painting"
+        },
+        "description": {
+          "it": "Verniciatura professionale con tecniche tradizionali e materiali di alta qualità per risultati eccellenti.",
+          "en": "Professional painting with traditional techniques and high-quality materials for excellent results."
+        }
+      },
+      {
+        "step": "06",
+        "title": {
+          "it": "Riassemblaggio e Rifinitura",
+          "en": "Reassembly & Finishing"
+        },
+        "description": {
+          "it": "Riassemblaggio finale di tutti i componenti con controllo qualità e rifinitura per raggiungere la massima qualità.",
+          "en": "Final reassembly of all components with quality control and finishing to achieve maximum quality."
+        }
+      }
+    ],
+    "recentProjects": [
+      {
+        "id": "ferrari-365-daytona",
+        "title": "Ferrari 365 Daytona GTB/4",
+        "image": "images/ourwork1.png"
+      },
+      {
+        "id": "alfa-romeo-1900", 
+        "title": "Alfa Romeo 1900 CSS Touring",
+        "image": "images/ourwork2.png"
+      },
+      {
+        "id": "cisitalia-202",
+        "title": "Cisitalia 202 Coupe",
+        "image": "images/ourwork3.png"
+      }
+    ]
+  },
+  "meccanica": {
+    "id": "meccanica",
+    "title": {
+      "it": "Officina Meccanica",
+      "en": "Mechanical Workshop"
+    },
+    "subtitle": {
+      "it": "Restauro e manutenzione motori con competenza tecnica specializzata",
+      "en": "Engine restoration and maintenance with specialized technical expertise"
+    },
+    "description": {
+      "it": "La nostra officina meccanica specializzata offre servizi completi per il restauro e la manutenzione di motori d'epoca, trasmissioni e componenti meccanici.",
+      "en": "Our specialized mechanical workshop offers complete services for the restoration and maintenance of vintage engines, transmissions and mechanical components."
+    },
+    "heroImage": "images/officinameccanica.png",
+    "whatWeOffer": [
+      {
+        "title": {
+          "it": "Restauro Motori Completo",
+          "en": "Complete Engine Restoration"
+        },
+        "description": {
+          "it": "Revisione completa di motori d'epoca con ricambi originali e tecniche specializzate per massime prestazioni.",
+          "en": "Complete overhaul of vintage engines with original parts and specialized techniques for maximum performance."
+        }
+      },
+      {
+        "title": {
+          "it": "Manutenzione Specializzata",
+          "en": "Specialized Maintenance"
+        },
+        "description": {
+          "it": "Controlli periodici e manutenzione preventiva per mantenere le prestazioni ottimali del veicolo d'epoca.",
+          "en": "Periodic checks and preventive maintenance to maintain optimal performance of vintage vehicles."
+        }
+      },
+      {
+        "title": {
+          "it": "Diagnosi Avanzata",
+          "en": "Advanced Diagnostics"
+        },
+        "description": {
+          "it": "Utilizzo di strumentazione moderna e tradizionale per diagnosi precise e soluzioni mirate.",
+          "en": "Use of modern and traditional instrumentation for precise diagnosis and targeted solutions."
+        }
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "it": "Diagnosi Iniziale",
+          "en": "Initial Diagnosis"
+        },
+        "description": {
+          "it": "Valutazione completa dello stato del motore e dei componenti meccanici.",
+          "en": "Complete evaluation of engine condition and mechanical components."
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "it": "Smontaggio Motore",
+          "en": "Engine Disassembly"
+        },
+        "description": {
+          "it": "Smontaggio accurato con catalogazione e documentazione di ogni componente.",
+          "en": "Careful disassembly with cataloging and documentation of each component."
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "it": "Lavorazioni Meccaniche",
+          "en": "Mechanical Work"
+        },
+        "description": {
+          "it": "Rettifica, molatura e lavorazioni di precisione su bancali, pistoni e componenti.",
+          "en": "Grinding, milling and precision work on crankshafts, pistons and components."
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "it": "Assemblaggio Finale",
+          "en": "Final Assembly"
+        },
+        "description": {
+          "it": "Rimontaggio con tolleranze originali e controllo qualità di ogni fase.",
+          "en": "Reassembly with original tolerances and quality control at each stage."
+        }
+      },
+      {
+        "step": "05",
+        "title": {
+          "it": "Test & Messa a Punto",
+          "en": "Testing & Tuning"
+        },
+        "description": {
+          "it": "Test approfonditi e messa a punto per prestazioni ottimali.",
+          "en": "Comprehensive testing and tuning for optimal performance."
+        }
+      },
+      {
+        "step": "06",
+        "title": {
+          "it": "Consegna & Documentazione",
+          "en": "Delivery & Documentation"
+        },
+        "description": {
+          "it": "Consegna con documentazione completa dei lavori eseguiti e consigli manutenzione.",
+          "en": "Delivery with complete documentation of work performed and maintenance advice."
+        }
+      }
+    ],
+    "recentProjects": [
+      {
+        "id": "ferrari-365-daytona",
+        "title": "Ferrari 365 Daytona GTB/4",
+        "image": "images/ourwork1.png"
+      },
+      {
+        "id": "alfa-romeo-1900",
+        "title": "Alfa Romeo 1900 CSS Touring", 
+        "image": "images/ourwork2.png"
+      },
+      {
+        "id": "cisitalia-202",
+        "title": "Cisitalia 202 Coupe",
+        "image": "images/ourwork3.png"
+      }
+    ]
+  },
+  "tapezzeria": {
+    "id": "tapezzeria",
+    "title": {
+      "it": "Tapezzeria",
+      "en": "Upholstery"
+    },
+    "subtitle": {
+      "it": "Restauro interni con materiali originali e artigianalità tradizionale",
+      "en": "Interior restoration with original materials and traditional craftsmanship"
+    },
+    "description": {
+      "it": "Specializziamo nel restauro completo di interni per auto d'epoca, utilizzando tecniche artigianali tradizionali e materiali rigorosamente originali.",
+      "en": "We specialize in complete interior restoration for classic cars, using traditional artisan techniques and strictly original materials."
+    },
+    "heroImage": "images/tapezzeria.png",
+    "whatWeOffer": [
+      {
+        "title": {
+          "it": "Restauro Sedili Completo",
+          "en": "Complete Seat Restoration"
+        },
+        "description": {
+          "it": "Rifacimento completo di sedili con pelle originale e tecniche artigianali tradizionali.",
+          "en": "Complete seat restoration with original leather and traditional artisan techniques."
+        }
+      },
+      {
+        "title": {
+          "it": "Rivestimenti Personalizzati",
+          "en": "Custom Upholstery"
+        },
+        "description": {
+          "it": "Creazione di rivestimenti su misura rispettando le specifiche originali del veicolo.",
+          "en": "Creation of custom upholstery respecting the original vehicle specifications."
+        }
+      },
+      {
+        "title": {
+          "it": "Restauro Cruscotto",
+          "en": "Dashboard Restoration"
+        },
+        "description": {
+          "it": "Restauro professionale di cruscotti e pannellature interne con materiali d'epoca.",
+          "en": "Professional restoration of dashboards and internal paneling with period materials."
+        }
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "it": "Analisi Originali",
+          "en": "Original Analysis"
+        },
+        "description": {
+          "it": "Studio dettagliato dei materiali e tecniche originali utilizzate dal costruttore.",
+          "en": "Detailed study of original materials and techniques used by the manufacturer."
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "it": "Smontaggio Accurato",
+          "en": "Careful Disassembly"
+        },
+        "description": {
+          "it": "Rimozione accurata di tutti i componenti interni con documentazione fotografica.",
+          "en": "Careful removal of all internal components with photographic documentation."
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "it": "Preparazione Materiali",
+          "en": "Material Preparation"
+        },
+        "description": {
+          "it": "Selezione e preparazione di pelli, tessuti e materiali rigorosamente originali.",
+          "en": "Selection and preparation of strictly original leathers, fabrics and materials."
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "it": "Lavorazione Artigianale",
+          "en": "Artisan Crafting"
+        },
+        "description": {
+          "it": "Lavorazione a mano con tecniche tradizionali per risultati autentici.",
+          "en": "Hand crafting with traditional techniques for authentic results."
+        }
+      },
+      {
+        "step": "05",
+        "title": {
+          "it": "Assemblaggio Finale",
+          "en": "Final Assembly"
+        },
+        "description": {
+          "it": "Montaggio finale con attenzione ai dettagli e finiture d'epoca.",
+          "en": "Final assembly with attention to details and period finishes."
+        }
+      },
+      {
+        "step": "06",
+        "title": {
+          "it": "Controllo Qualità",
+          "en": "Quality Control"
+        },
+        "description": {
+          "it": "Verifica finale della qualità e conformità agli standard originali.",
+          "en": "Final verification of quality and conformity to original standards."
+        }
+      }
+    ],
+    "recentProjects": [
+      {
+        "id": "ferrari-365-daytona",
+        "title": "Ferrari 365 Daytona GTB/4",
+        "image": "images/ourwork1.png"
+      },
+      {
+        "id": "alfa-romeo-1900",
+        "title": "Alfa Romeo 1900 CSS Touring",
+        "image": "images/ourwork2.png"
+      },
+      {
+        "id": "cisitalia-202",
+        "title": "Cisitalia 202 Coupe",
+        "image": "images/ourwork3.png"
+      }
+    ]
+  },
+  "consulenza": {
+    "id": "consulenza",
+    "title": {
+      "it": "Consulenza Acquisto Vetture",
+      "en": "Vehicle Purchase Consulting"
+    },
+    "subtitle": {
+      "it": "Esperienza e competenza per guidarti nell'acquisto della tua auto d'epoca",
+      "en": "Experience and expertise to guide you in purchasing your classic car"
+    },
+    "description": {
+      "it": "Offriamo servizi di consulenza specializzata per l'acquisto di auto d'epoca, con valutazioni tecniche approfondite e supporto completo.",
+      "en": "We offer specialized consulting services for classic car purchases, with in-depth technical evaluations and complete support."
+    },
+    "heroImage": "images/consulenza.png",
+    "whatWeOffer": [
+      {
+        "title": {
+          "it": "Valutazione Tecnica",
+          "en": "Technical Evaluation"
+        },
+        "description": {
+          "it": "Valutazione approfondita delle condizioni tecniche e del valore di mercato del veicolo.",
+          "en": "In-depth evaluation of technical conditions and market value of the vehicle."
+        }
+      },
+      {
+        "title": {
+          "it": "Ricerca Veicoli",
+          "en": "Vehicle Search"
+        },
+        "description": {
+          "it": "Ricerca mirata di veicoli d'epoca in base alle vostre specifiche esigenze e budget.",
+          "en": "Targeted search for vintage vehicles based on your specific needs and budget."
+        }
+      },
+      {
+        "title": {
+          "it": "Supporto Acquisto",
+          "en": "Purchase Support"
+        },
+        "description": {
+          "it": "Assistenza completa durante tutto il processo di acquisto, dalla trattativa alla consegna.",
+          "en": "Complete assistance throughout the entire purchase process, from negotiation to delivery."
+        }
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "it": "Definizione Obiettivi",
+          "en": "Goal Definition"
+        },
+        "description": {
+          "it": "Analisi delle vostre esigenze, preferenze e budget per orientare la ricerca.",
+          "en": "Analysis of your needs, preferences and budget to guide the search."
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "it": "Ricerca Mirata",
+          "en": "Targeted Search"
+        },
+        "description": {
+          "it": "Ricerca approfondita nel mercato nazionale e internazionale di veicoli idonei.",
+          "en": "In-depth search in the national and international market for suitable vehicles."
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "it": "Pre-selezione",
+          "en": "Pre-selection"
+        },
+        "description": {
+          "it": "Prima selezione dei veicoli più interessanti con analisi documentale preliminare.",
+          "en": "Initial selection of the most interesting vehicles with preliminary documentary analysis."
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "it": "Ispezione Tecnica",
+          "en": "Technical Inspection"
+        },
+        "description": {
+          "it": "Ispezione tecnica approfondita con valutazione delle condizioni e autenticità.",
+          "en": "In-depth technical inspection with evaluation of conditions and authenticity."
+        }
+      },
+      {
+        "step": "05",
+        "title": {
+          "it": "Negoziazione",
+          "en": "Negotiation"
+        },
+        "description": {
+          "it": "Supporto nella negoziazione del prezzo e delle condizioni di vendita.",
+          "en": "Support in negotiating price and sales conditions."
+        }
+      },
+      {
+        "step": "06",
+        "title": {
+          "it": "Finalizzazione",
+          "en": "Finalization"
+        },
+        "description": {
+          "it": "Assistenza per il completamento dell'acquisto e organizzazione del trasporto.",
+          "en": "Assistance for completing the purchase and organizing transportation."
+        }
+      }
+    ],
+    "recentProjects": [
+      {
+        "id": "ferrari-365-daytona",
+        "title": "Ferrari 365 Daytona GTB/4",
+        "image": "images/ourwork1.png"
+      },
+      {
+        "id": "alfa-romeo-1900",
+        "title": "Alfa Romeo 1900 CSS Touring",
+        "image": "images/ourwork2.png"
+      },
+      {
+        "id": "cisitalia-202",
+        "title": "Cisitalia 202 Coupe",
+        "image": "images/ourwork3.png"
+      }
+    ]
+  },
+  "elettrici": {
+    "id": "elettrici",
+    "title": {
+      "it": "Impianti Elettrici",
+      "en": "Electrical Systems"
+    },
+    "subtitle": {
+      "it": "Restauro e manutenzione impianti elettrici per auto d'epoca",
+      "en": "Restoration and maintenance of electrical systems for classic cars"
+    },
+    "description": {
+      "it": "Specializziamo nel restauro e rifacimento completo di impianti elettrici per auto d'epoca, utilizzando componenti originali e tecniche d'epoca.",
+      "en": "We specialize in the restoration and complete overhaul of electrical systems for classic cars, using original components and period techniques."
+    },
+    "heroImage": "images/elettrici.png",
+    "whatWeOffer": [
+      {
+        "title": {
+          "it": "Rifacimento Impianto",
+          "en": "System Overhaul"
+        },
+        "description": {
+          "it": "Rifacimento completo dell'impianto elettrico con cablaggi originali e componenti d'epoca.",
+          "en": "Complete electrical system overhaul with original wiring and period components."
+        }
+      },
+      {
+        "title": {
+          "it": "Diagnosi Elettrica",
+          "en": "Electrical Diagnosis"
+        },
+        "description": {
+          "it": "Diagnosi accurata di problemi elettrici con strumentazione specializzata per auto d'epoca.",
+          "en": "Accurate diagnosis of electrical problems with specialized instrumentation for classic cars."
+        }
+      },
+      {
+        "title": {
+          "it": "Restauro Componenti",
+          "en": "Component Restoration"
+        },
+        "description": {
+          "it": "Restauro di alternatori, motorini di avviamento e componenti elettrici originali.",
+          "en": "Restoration of alternators, starter motors and original electrical components."
+        }
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "it": "Analisi Schema",
+          "en": "Schematic Analysis"
+        },
+        "description": {
+          "it": "Studio dello schema elettrico originale e analisi dell'impianto esistente.",
+          "en": "Study of original electrical schematic and analysis of existing system."
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "it": "Smontaggio Sistematico",
+          "en": "Systematic Disassembly"
+        },
+        "description": {
+          "it": "Rimozione accurata di tutti i componenti elettrici con mappatura completa.",
+          "en": "Careful removal of all electrical components with complete mapping."
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "it": "Test Componenti",
+          "en": "Component Testing"
+        },
+        "description": {
+          "it": "Test approfondito di ogni componente per valutarne lo stato e la funzionalità.",
+          "en": "Thorough testing of each component to assess its condition and functionality."
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "it": "Rifacimento Cablaggio",
+          "en": "Wiring Overhaul"
+        },
+        "description": {
+          "it": "Rifacimento completo del cablaggio con fili e guaine originali.",
+          "en": "Complete wiring overhaul with original wires and sheaths."
+        }
+      },
+      {
+        "step": "05",
+        "title": {
+          "it": "Reinstallazione",
+          "en": "Reinstallation"
+        },
+        "description": {
+          "it": "Reinstallazione accurata di tutti i componenti secondo le specifiche originali.",
+          "en": "Careful reinstallation of all components according to original specifications."
+        }
+      },
+      {
+        "step": "06",
+        "title": {
+          "it": "Test Finale",
+          "en": "Final Testing"
+        },
+        "description": {
+          "it": "Test completo del funzionamento e verifica di tutti i circuiti elettrici.",
+          "en": "Complete functional testing and verification of all electrical circuits."
+        }
+      }
+    ],
+    "recentProjects": [
+      {
+        "id": "ferrari-365-daytona",
+        "title": "Ferrari 365 Daytona GTB/4",
+        "image": "images/ourwork1.png"
+      },
+      {
+        "id": "alfa-romeo-1900",
+        "title": "Alfa Romeo 1900 CSS Touring",
+        "image": "images/ourwork2.png"
+      },
+      {
+        "id": "cisitalia-202",
+        "title": "Cisitalia 202 Coupe",
+        "image": "images/ourwork3.png"
+      }
+    ]
+  },
+  "supportogare": {
+    "id": "supportogare",
+    "title": {
+      "it": "Supporto Gare",
+      "en": "Race Support"
+    },
+    "subtitle": {
+      "it": "Assistenza tecnica specializzata per competizioni automobilistiche d'epoca",
+      "en": "Specialized technical assistance for classic car competitions"
+    },
+    "description": {
+      "it": "Offriamo supporto tecnico completo per competizioni automobilistiche d'epoca, dalla preparazione dei veicoli all'assistenza durante le gare.",
+      "en": "We offer complete technical support for classic car competitions, from vehicle preparation to race-day assistance."
+    },
+    "heroImage": "images/supportogare.png",
+    "whatWeOffer": [
+      {
+        "title": {
+          "it": "Preparazione Veicoli da Gara",
+          "en": "Race Vehicle Preparation"
+        },
+        "description": {
+          "it": "Preparazione completa di veicoli d'epoca per competizioni con setup specifici per ogni tipologia di gara.",
+          "en": "Complete preparation of vintage vehicles for competitions with specific setups for each type of race."
+        }
+      },
+      {
+        "title": {
+          "it": "Assistenza in Pista",
+          "en": "Track-side Assistance"
+        },
+        "description": {
+          "it": "Supporto tecnico diretto durante le competizioni con meccanici specializzati e attrezzature mobili.",
+          "en": "Direct technical support during competitions with specialized mechanics and mobile equipment."
+        }
+      },
+      {
+        "title": {
+          "it": "Manutenzione Post-Gara",
+          "en": "Post-Race Maintenance"
+        },
+        "description": {
+          "it": "Controlli e manutenzione approfonditi dopo ogni competizione per preservare l'integrità del veicolo.",
+          "en": "Thorough inspections and maintenance after each competition to preserve vehicle integrity."
+        }
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "it": "Valutazione Pre-Gara",
+          "en": "Pre-Race Assessment"
+        },
+        "description": {
+          "it": "Analisi completa del veicolo e definizione della strategia di preparazione per la competizione.",
+          "en": "Complete vehicle analysis and definition of preparation strategy for the competition."
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "it": "Setup Tecnico",
+          "en": "Technical Setup"
+        },
+        "description": {
+          "it": "Configurazione tecnica specifica per il tipo di gara e le caratteristiche del circuito.",
+          "en": "Specific technical configuration for the type of race and circuit characteristics."
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "it": "Test e Prove",
+          "en": "Testing & Trials"
+        },
+        "description": {
+          "it": "Sessioni di test per ottimizzare le prestazioni e verificare l'affidabilità del veicolo.",
+          "en": "Test sessions to optimize performance and verify vehicle reliability."
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "it": "Assistenza Gara",
+          "en": "Race Assistance"
+        },
+        "description": {
+          "it": "Supporto tecnico completo durante tutta la durata della competizione.",
+          "en": "Complete technical support throughout the entire duration of the competition."
+        }
+      },
+      {
+        "step": "05",
+        "title": {
+          "it": "Analisi Post-Gara",
+          "en": "Post-Race Analysis"
+        },
+        "description": {
+          "it": "Verifica delle prestazioni e analisi dei dati per miglioramenti futuri.",
+          "en": "Performance verification and data analysis for future improvements."
+        }
+      },
+      {
+        "step": "06",
+        "title": {
+          "it": "Ripristino Veicolo",
+          "en": "Vehicle Restoration"
+        },
+        "description": {
+          "it": "Riportare il veicolo alle condizioni originali dopo la competizione.",
+          "en": "Restore the vehicle to original conditions after the competition."
+        }
+      }
+    ],
+    "recentProjects": [
+      {
+        "id": "ferrari-365-daytona",
+        "title": "Ferrari 365 Daytona GTB/4",
+        "image": "images/ourwork1.png"
+      },
+      {
+        "id": "alfa-romeo-1900",
+        "title": "Alfa Romeo 1900 CSS Touring",
+        "image": "images/ourwork2.png"
+      },
+      {
+        "id": "cisitalia-202",
+        "title": "Cisitalia 202 Coupe",
+        "image": "images/ourwork3.png"
+      }
+    ]
+  }
+}

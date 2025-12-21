@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="service-title">Servizio | Rizza Classic</title>
+    <meta name="description" id="service-description" content="Servizio specializzato di restauro auto d'epoca presso Rizza Classic a Roma.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rizza Classic">
+    <link rel="canonical" href="https://rizzaclassic.com/service-detail.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Noto Serif', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Noto Serif', serif;
+                font-size: 32px;
+            }
+            
+            h1 {
+                line-height: 150%;
+                letter-spacing: -0.02em;
+            }
+            
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0;
+            }
+            
+            @media (min-width: 1024px) {
+                h1, h2, h3, h4, h5, h6 {
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        @layer components {
+            .process-step {
+                border-bottom: 1px solid #333;
+                padding: 2rem 0;
+            }
+            
+            .process-step:last-child {
+                border-bottom: none;
+            }
+            
+            .service-card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                height: 350px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            
+            .service-card:hover {
+                transform: translateY(-4px);
+            }
+            
+            .service-card img {
+                transition: transform 0.7s ease;
+            }
+            
+            .service-card:hover img {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-clip">
+    <!-- Hero Section -->
+    <section class="bg-black pt-[100px] pb-[40px]" id="hero-section">
+        <div class="container mx-auto px-4 md:px-0">
+                <!-- Breadcrumb -->
+                <nav class="mb-8">
+                    <div class="flex items-center text-sm text-gray-400">
+                        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                        <span class="mx-2">/</span>
+                        <a href="services.html" class="hover:text-white transition-colors">Services</a>
+                        <span class="mx-2">/</span>
+                        <span class="text-white" id="breadcrumb-service">Carrozzeria</span>
+                    </div>
+                </nav>
+                
+                <!-- Hero Content -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column - Text Content -->
+                    <div class="text-white">
+                        <div class="mb-6">
+                            <span class="text-sm uppercase tracking-[0.2em] text-gray-400 font-medium">Servizio Specializzato</span>
+                        </div>
+                        <h1 class="text-[40px] md:text-[56px] lg:text-[64px] font-semibold leading-[110%] tracking-[-0.02em] mb-6" id="service-main-title">Carrozzeria</h1>
+                        <p class="text-[#B0B0B0] text-lg md:text-xl leading-relaxed mb-8" id="service-subtitle">Ripristino e riverniciatura con passione e qualità di altissimo livello</p>
+                        
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-white text-black px-8 py-4 rounded-sm font-medium hover:bg-gray-100 transition-colors duration-200">
+                                Richiedi Preventivo
+                            </button>
+                            <button class="border border-white text-white px-8 py-4 rounded-sm font-medium hover:bg-white hover:text-black transition-colors duration-200">
+                                Visualizza Portfolio
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Stats/Features -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <!-- Stat 1 -->
+                        <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-6 rounded-lg text-center">
+                            <div class="text-3xl font-semibold text-white mb-2">30+</div>
+                            <div class="text-sm text-gray-400 leading-relaxed">Anni di Esperienza nel Settore</div>
+                        </div>
+                        
+                        <!-- Stat 2 -->
+                        <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-6 rounded-lg text-center">
+                            <div class="text-3xl font-semibold text-white mb-2">150+</div>
+                            <div class="text-sm text-gray-400 leading-relaxed">Progetti di Restauro Completati</div>
+                        </div>
+                        
+                        <!-- Stat 3 -->
+                        <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-6 rounded-lg text-center">
+                            <div class="text-3xl font-semibold text-white mb-2">98%</div>
+                            <div class="text-sm text-gray-400 leading-relaxed">Clienti Soddisfatti</div>
+                        </div>
+                        
+                        <!-- Stat 4 -->
+                        <div class="bg-gradient-to-b from-[#1A1A1A] to-black p-6 rounded-lg text-center">
+                            <div class="text-3xl font-semibold text-white mb-2">24h</div>
+                            <div class="text-sm text-gray-400 leading-relaxed">Tempo di Risposta Medio</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Service Description -->
+    <section class="bg-black ">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="max-w-4xl ">
+                <p class="text-white text-lg leading-relaxed" id="service-full-description">
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="bg-black py-[60px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-8">What we Offer</h2>
+            </div>
+
+            <!-- Offers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="offers-grid">
+                <!-- Offers will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="bg-black py-[60px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-8">Our process</h2>
+            </div>
+
+            <!-- Process Steps -->
+            <div id="process-steps">
+                <!-- Process steps will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section class="bg-black py-[60px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <!-- Section Header -->
+            <div class="mb-16">
+                <h2 class="text-white text-[32px] lg:text-[40px] font-semibold mb-8">Recent Projects</h2>
+                <p class="text-gray-400 text-base max-w-3xl">Realizzazioni recenti che dimostrano la nostra competenza automobilistica.</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="recent-projects">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0 text-center">
+            <h2 class="text-white text-[32px] lg:text-[48px] font-semibold mb-4" data-translate="service-detail-cta-title">Begin Your Restoration Journey</h2>
+            <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto" data-translate="service-detail-cta-subtitle">Let us bring your classic automobile back to life with the same dedication and craftsmanship.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-black px-9 py-4 rounded-sm font-medium hover:bg-gray-100 transition-colors duration-200" data-translate="cta-start-project">
+                    Start a Project
+                </a>
+                <a href="restorations.html" class="border border-white text-white px-9 py-4 rounded-sm font-medium hover:bg-white hover:text-black transition-colors duration-200" data-translate="cta-view-projects">
+                    View more PROJECTS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-b from-[#0D0D0D] to-black border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-12 xl:px-16 py-12 lg:py-16">
+            <!-- Desktop Layout -->
+            <div class="hidden lg:flex justify-between mb-12">
+                <!-- Contacts Section -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-contacts">Contatti</h3>
+                    <div class="space-y-4 flex  items-end justify-center gap-5">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-email">Email</p>
+                            <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors text-sm">info@rizzaclassic.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-phone">Numero di telefono</p>
+                            <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors text-sm">+39 346 6383 339</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-address">Indirizzo</p>
+                            <p class="text-white text-sm">Via Prenestina, 912 00155 Roma (RM)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Sections -->
+                <div class="flex gap-16">
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-rizza-classic">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="index.html#chi-siamo" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-about">Chi siamo</a>
+                            <a href="services.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-services">Servizi</a>
+                            <a href="#extra-services" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-extra-services">Servizi extra</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-our-work">Il nostro lavoro</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-portfolio">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-contacts-link">Contatti</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-services-list">Servizi</h3>
+                        <div class="space-y-3">
+                            <a href="service-detail.html?service=carrozzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-carrozzeria">Carrozzeria</a>
+                            <a href="service-detail.html?service=meccanica" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-officina">Officina Meccanica</a>
+                            <a href="service-detail.html?service=tapezzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-tapezzeria">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Layout -->
+            <div class="lg:hidden mb-12">
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Contacts Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Contacts</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Email</p>
+                                <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors">info@rizzaclassic.com</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Phone number</p>
+                                <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors">+39 346 6383 339</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Address</p>
+                                <p class="text-white">Via Prenestina, 912 00155 Roma (RM)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="index.html#chi-siamo" class="block text-gray-400 hover:text-white transition-colors">About us</a>
+                            <a href="services.html" class="block text-gray-400 hover:text-white transition-colors">Services</a>
+                            <a href="#extra-services" class="block text-gray-400 hover:text-white transition-colors">Extra services</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Our work</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors">Contacts</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Services</h3>
+                        <div class="space-y-3">
+                            <a href="service-detail.html?service=carrozzeria" class="block text-gray-400 hover:text-white transition-colors">Carrozzeria</a>
+                            <a href="service-detail.html?service=meccanica" class="block text-gray-400 hover:text-white transition-colors">Officina Meccanica</a>
+                            <a href="service-detail.html?service=tapezzeria" class="block text-gray-400 hover:text-white transition-colors">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                    <!-- Copyright -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-gray-500 text-sm">©</span>
+                        <span class="text-gray-400 text-sm">Rizza Classic</span>
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="flex gap-6">
+                        <a href="#terms" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-terms">Termini e Condizioni</a>
+                        <a href="#privacy" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Large Brand Name -->
+    <div class="w-screen overflow-x-clip overflow-x-hidden">
+        <img src="images/RIZZACLASSIC.svg" alt="Rizza Classic - Restauro auto d'epoca e auto storiche Roma" class="w-full h-auto select-none pointer-events-none">
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        // Service Detail Handler
+        class ServiceDetail {
+            constructor() {
+                this.currentLang = localStorage.getItem('language') || 'it';
+                this.serviceData = null;
+                this.serviceId = this.getServiceIdFromURL();
+                this.init();
+                this.bindLanguageChange();
+            }
+
+            getServiceIdFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get('service') || 'carrozzeria';
+            }
+
+            async init() {
+                await this.loadServiceData();
+                this.populateContent();
+            }
+
+            async loadServiceData() {
+                try {
+                    const response = await fetch('data/services.json');
+                    const data = await response.json();
+                    this.serviceData = data[this.serviceId];
+                } catch (error) {
+                    console.error('Error loading service data:', error);
+                    // Fallback to carrozzeria if service not found
+                    this.serviceId = 'carrozzeria';
+                }
+            }
+
+            populateContent() {
+                if (!this.serviceData) return;
+
+                const service = this.serviceData;
+                const lang = this.currentLang;
+
+                // Update page title and meta
+                document.getElementById('service-title').textContent = `${service.title[lang]} | Rizza Classic`;
+                document.getElementById('service-description').setAttribute('content', service.description[lang]);
+
+                // Update main content
+                document.getElementById('service-main-title').textContent = service.title[lang];
+                document.getElementById('service-subtitle').textContent = service.subtitle[lang];
+                document.getElementById('service-full-description').textContent = service.description[lang];
+                document.getElementById('breadcrumb-service').textContent = service.title[lang];
+
+                // Populate offers
+                this.populateOffers(service.whatWeOffer, lang);
+
+                // Populate process
+                this.populateProcess(service.process, lang);
+
+                // Populate recent projects
+                this.populateProjects(service.recentProjects);
+            }
+
+            populateOffers(offers, lang) {
+                const offersGrid = document.getElementById('offers-grid');
+                offersGrid.innerHTML = '';
+
+                offers.forEach((offer, index) => {
+                    const offerDiv = document.createElement('div');
+                    offerDiv.className = 'text-white p-6 rounded-lg bg-gradient-to-b from-[#1A1A1A] to-black';
+                    offerDiv.innerHTML = `
+                        <div class="mb-4">
+                            <span class="text-2xl font-semibold">${index + 1}</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">${offer.title[lang]}</h3>
+                        <p class="text-gray-400 text-base leading-relaxed">${offer.description[lang]}</p>
+                    `;
+                    offersGrid.appendChild(offerDiv);
+                });
+            }
+
+            populateProcess(processSteps, lang) {
+                const processContainer = document.getElementById('process-steps');
+                processContainer.innerHTML = '';
+
+                processSteps.forEach((step) => {
+                    const stepDiv = document.createElement('div');
+                    stepDiv.className = 'process-step';
+                    stepDiv.innerHTML = `
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <span class="text-4xl font-light text-gray-500">${step.step}</span>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-white text-xl lg:text-2xl font-medium mb-3 leading-tight">${step.title[lang]}</h3>
+                                <p class="text-gray-400 text-base lg:text-lg leading-relaxed">${step.description[lang]}</p>
+                            </div>
+                        </div>
+                    `;
+                    processContainer.appendChild(stepDiv);
+                });
+            }
+
+            populateProjects(projects) {
+                const projectsGrid = document.getElementById('recent-projects');
+                projectsGrid.innerHTML = '';
+
+                projects.forEach((project) => {
+                    const projectDiv = document.createElement('div');
+                    projectDiv.className = 'service-card bg-gradient-to-b from-[#1A1A1A] to-black';
+                    projectDiv.onclick = () => window.location.href = `project.html?id=${project.id}`;
+                    projectDiv.innerHTML = `
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="flex items-center justify-between">
+                                <h4 class="text-white text-[20px] font-normal leading-[150%] tracking-[-0.01em]">${project.title}</h4>
+                                <div class="flex items-center text-white">
+                                    <span class="text-sm font-light mr-2">View</span>
+                                    <img src="images/arrow-right.svg" alt="View project details" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1">
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    projectsGrid.appendChild(projectDiv);
+                });
+            }
+
+            bindLanguageChange() {
+                // Listen for storage changes (language changes from other tabs/pages)
+                window.addEventListener('storage', (e) => {
+                    if (e.key === 'language') {
+                        this.currentLang = e.newValue;
+                        this.populateContent();
+                    }
+                });
+
+                // Also check periodically for language changes within the same tab
+                setInterval(() => {
+                    const newLang = localStorage.getItem('language') || 'it';
+                    if (newLang !== this.currentLang) {
+                        this.currentLang = newLang;
+                        this.populateContent();
+                    }
+                }, 1000);
+            }
+        }
+
+        // Initialize service detail when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new ServiceDetail();
+        });
+    </script>
+</body>
+</html>
