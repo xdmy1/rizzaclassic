@@ -1,0 +1,5 @@
+view all button from index.html is not translatable
+also the view text on the cards from that section as well is not
+
+
+Contact us button from hero section index.html should lead to contact.html

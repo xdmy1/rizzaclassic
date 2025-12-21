@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo | Rizza Classic</title>
+    <meta name="description" content="Scopri la storia e il team di Rizza Classic, esperti nel restauro di auto d'epoca a Roma con oltre 30 anni di esperienza.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rizza Classic">
+    <link rel="canonical" href="https://rizzaclassic.com/about.html">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Noto Serif', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Noto Serif', serif;
+                font-size: 32px;
+            }
+            
+            h1 {
+                line-height: 150%;
+                letter-spacing: -0.02em;
+            }
+            
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0;
+            }
+            
+            @media (min-width: 1024px) {
+                h1, h2, h3, h4, h5, h6 {
+                    font-size: 40px;
+                }
+            }
+        }
+        
+        @layer components {
+            .team-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            
+            .team-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            }
+            
+            .brand-logo {
+                transition: all 0.5s ease;
+                filter: grayscale(100%) brightness(0.8);
+            }
+            
+            .brand-logo:hover {
+                filter: grayscale(0%) brightness(1);
+                transform: scale(1.1);
+            }
+            
+            .infinite-scroll-container {
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+            }
+            
+            .scroll-content {
+                display: flex;
+                gap: 3rem;
+                will-change: transform;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-clip">
+    <!-- Hero Section -->
+    <section class="bg-black pt-[100px] pb-[80px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="text-center">
+                <p class="text-gray-400 text-sm uppercase tracking-[0.2em] mb-6" data-translate="about-since">Dal 1969</p>
+                <h1 class="text-white text-[40px] md:text-[56px] lg:text-[64px] font-semibold leading-[110%] tracking-[-0.02em] mb-6" data-translate="about-hero-title">Esperienza, qualità e passione</h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed" data-translate="about-hero-subtitle">A workshop dedicated to the restoration and preservation of classic automobiles, delivering projects finished to true collector standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Andrea Rizza -->
+                <div class="team-card bg-gradient-to-b from-[#1A1A1A] to-black rounded-lg overflow-hidden">
+                    <div class="aspect-square">
+                        <img src="images/andrearizza.png" alt="Andrea Rizza" class="w-full h-full object-cover">
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Andrea Rizza</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed" data-translate="team-andrea-title">Project Manager and head of the Rizza classic team</p>
+                    </div>
+                </div>
+
+                <!-- Mirko Rizza -->
+                <div class="team-card bg-gradient-to-b from-[#1A1A1A] to-black rounded-lg overflow-hidden">
+                    <div class="aspect-square">
+                        <img src="images/markorizza.png" alt="Mirko Rizza" class="w-full h-full object-cover">
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Mirko Rizza</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed" data-translate="team-mirko-title">Head of the planning and painting department</p>
+                    </div>
+                </div>
+
+                <!-- Alberto Rizza -->
+                <div class="team-card bg-gradient-to-b from-[#1A1A1A] to-black rounded-lg overflow-hidden">
+                    <div class="aspect-square">
+                        <img src="images/albertorizza.png" alt="Alberto Rizza" class="w-full h-full object-cover">
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Alberto Rizza</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed" data-translate="team-alberto-title">Founder of Carrozzeria Rizza</p>
+                    </div>
+                </div>
+
+                <!-- Daniele Rizza -->
+                <div class="team-card bg-gradient-to-b from-[#1A1A1A] to-black rounded-lg overflow-hidden">
+                    <div class="aspect-square">
+                        <img src="images/danielerizza.png" alt="Daniele Rizza" class="w-full h-full object-cover">
+                    </div>
+                    <div class="pt-6">
+                        <h3 class="text-white text-xl font-semibold mb-2">Daniele Rizza</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed" data-translate="team-daniele-title">Tech, digital Land Rover and Owner Service Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="mb-16">
+                <h2 class="text-white text-[32px] lg:text-[48px] font-semibold mb-4" data-translate="philosophy-title">Our philosophy</h2>
+                <p class="text-gray-400 text-lg" data-translate="philosophy-subtitle">The principles that guide every restoration project</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Authenticity First -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4" data-translate="philosophy-authenticity-title">Authenticity First</h3>
+                    <p class="text-gray-400 leading-relaxed" data-translate="philosophy-authenticity-desc">We respect the original design intent, using period-correct materials whenever available to preserve the vehicle's original character and vintage integrity.</p>
+                </div>
+
+                <!-- In-house Expertise -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4" data-translate="philosophy-expertise-title">In-house Expertise</h3>
+                    <p class="text-gray-400 leading-relaxed" data-translate="philosophy-expertise-desc">From mechanics to paint, mechanics to interiors—all work is performed by our team of specialists under one roof for full quality control.</p>
+                </div>
+
+                <!-- Limited Projects -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4" data-translate="philosophy-limited-title">Limited Projects</h3>
+                    <p class="text-gray-400 leading-relaxed" data-translate="philosophy-limited-desc">We accept only a select number of restorations each year, ensuring every car receives the time and attention it deserves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Text -->
+                <div>
+                    <h2 class="text-white text-[32px] lg:text-[48px] font-semibold mb-8" data-translate="heritage-title">Our Heritage</h2>
+                    
+                    <div class="space-y-6 text-gray-400 leading-relaxed">
+                        <p data-translate="heritage-p1">
+                            Founded by Alberto Rizza, Carrozzeria Rizza has inherited automotive expertise passed down through generations. What began as a small family-run body shop in Rome has grown into a renowned center for classic car restoration.
+                        </p>
+                        
+                        <p data-translate="heritage-p2">
+                            From a young age, Alberto would run to his father Ettore's workshop after school, absorbing the traditional techniques that would become the foundation for today's success. These methods, passed down through three generations of the Rizza family.
+                        </p>
+                        
+                        <p data-translate="heritage-p3">
+                            We don't just restore cars—we uncover their stories, preserve their heritage, and ensure their legacy endures for future generations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Heritage Image -->
+                <div>
+                    <div class="relative">
+                        <img src="images/heritage.png" alt="Rizza Classic Heritage - Vintage workshop photo" class="w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recognition Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0">
+            <div class="text-center mb-16">
+                <h2 class="text-white text-[32px] lg:text-[48px] font-semibold mb-4" data-translate="recognition-title">Recognition and expertise</h2>
+            </div>
+
+            <!-- Desktop Brand Grid -->
+            <div class="hidden lg:flex items-center justify-center space-x-16">
+                <div class="brand-logo">
+                    <img src="images/fiat.svg" alt="Fiat" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/jaguar.svg" alt="Jaguar" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/alfaromeo.svg" alt="Alfa Romeo" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/ferrari.svg" alt="Ferrari" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/landrover.svg" alt="Land Rover" class="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+            
+            <!-- Mobile Infinite Scroll -->
+            <div class="lg:hidden infinite-scroll-container h-16">
+                <!-- Blur gradients -->
+                <div class="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-black to-transparent z-10"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-black to-transparent z-10"></div>
+                
+                <div class="scroll-content h-16 items-center" id="infinite-scroll-about">
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/fiat.svg" alt="Fiat" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/jaguar.svg" alt="Jaguar" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/alfaromeo.svg" alt="Alfa Romeo" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/ferrari.svg" alt="Ferrari" class="h-12 w-auto opacity-70">
+                    </div>
+                    <div class="brand-logo flex-shrink-0">
+                        <img src="images/landrover.svg" alt="Land Rover" class="h-12 w-auto opacity-70">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Map Section -->
+    <section class="bg-black py-[80px]">
+        <div class="container mx-auto px-4 md:px-0">
+            
+
+            <!-- World Map -->
+            <div class="relative max-w-6xl mx-auto">
+                <img src="images/map.png" alt="Rizza Classic Global Presence" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-b from-[#0D0D0D] to-black border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-12 xl:px-16 py-12 lg:py-16">
+            <!-- Desktop Layout -->
+            <div class="hidden lg:flex justify-between mb-12">
+                <!-- Contacts Section -->
+                <div>
+                    <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-contacts">Contatti</h3>
+                    <div class="space-y-4 flex items-end justify-center gap-5">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-email">Email</p>
+                            <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors text-sm">info@rizzaclassic.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-phone">Numero di telefono</p>
+                            <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors text-sm">+39 346 6383 339</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1" data-translate="footer-address">Indirizzo</p>
+                            <p class="text-white text-sm">Via Prenestina, 912 00155 Roma (RM)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Sections -->
+                <div class="flex gap-16">
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-rizza-classic">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="about.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-about">Chi siamo</a>
+                            <a href="services.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-services">Servizi</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-our-work">Il nostro lavoro</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-portfolio">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-contacts-link">Contatti</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6" data-translate="footer-services-list">Servizi</h3>
+                        <div class="space-y-3">
+                            <a href="service-detail.html?service=carrozzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-carrozzeria">Carrozzeria</a>
+                            <a href="service-detail.html?service=meccanica" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-officina">Officina Meccanica</a>
+                            <a href="service-detail.html?service=tapezzeria" class="block text-gray-400 hover:text-white transition-colors text-sm" data-translate="footer-tapezzeria">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Layout -->
+            <div class="lg:hidden mb-12">
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Contacts Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Contacts</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Email</p>
+                                <a href="mailto:info@rizzaclassic.com" class="text-white hover:text-gray-300 transition-colors">info@rizzaclassic.com</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Phone number</p>
+                                <a href="tel:+393466383339" class="text-white hover:text-gray-300 transition-colors">+39 346 6383 339</a>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm mb-1">Address</p>
+                                <p class="text-white">Via Prenestina, 912 00155 Roma (RM)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rizza Classic Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Rizza Classic</h3>
+                        <div class="space-y-3">
+                            <a href="about.html" class="block text-gray-400 hover:text-white transition-colors">About us</a>
+                            <a href="services.html" class="block text-gray-400 hover:text-white transition-colors">Services</a>
+                        </div>
+                    </div>
+
+                    <!-- Our Work Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Our work</h3>
+                        <div class="space-y-3">
+                            <a href="restorations.html" class="block text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white transition-colors">Contacts</a>
+                        </div>
+                    </div>
+
+                    <!-- Services Column -->
+                    <div>
+                        <h3 class="text-white text-lg font-medium mb-6">Services</h3>
+                        <div class="space-y-3">
+                            <a href="service-detail.html?service=carrozzeria" class="block text-gray-400 hover:text-white transition-colors">Carrozzeria</a>
+                            <a href="service-detail.html?service=meccanica" class="block text-gray-400 hover:text-white transition-colors">Officina Meccanica</a>
+                            <a href="service-detail.html?service=tapezzeria" class="block text-gray-400 hover:text-white transition-colors">Tapezzeria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+                    <!-- Copyright -->
+                    <div class="flex items-center gap-2">
+                        <span class="text-gray-500 text-sm">©</span>
+                        <span class="text-gray-400 text-sm">Rizza Classic</span>
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="flex gap-6">
+                        <a href="#terms" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-terms">Termini e Condizioni</a>
+                        <a href="#privacy" class="text-gray-400 text-sm hover:text-white transition-colors" data-translate="footer-privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Large Brand Name -->
+    <div class="w-screen overflow-x-hidden">
+        <img src="images/RIZZACLASSIC.svg" alt="Rizza Classic - Restauro auto d'epoca e auto storiche Roma" class="w-full h-auto select-none pointer-events-none">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
