@@ -635,6 +635,12 @@ class LanguageSwitcher {
                 'view-project': 'Visualizza',
                 'view-all-projects': 'Visualizza Tutti',
                 
+                // Service Detail Page
+                'what-we-offer': 'Cosa Offriamo',
+                'our-process': 'Il Nostro Processo',
+                'recent-projects-title': 'Progetti Recenti',
+                'recent-projects-desc': 'Realizzazioni recenti che dimostrano la nostra competenza automobilistica.',
+                
                 // Restorations Page
                 'restorations-title': 'Restauri',
                 'restorations-subtitle': 'Un laboratorio dedicato al restauro e alla conservazione di automobili d\'epoca, realizzando progetti finiti ai veri standard dei collezionisti.',
@@ -826,6 +832,12 @@ class LanguageSwitcher {
                 // Project Cards
                 'view-project': 'View',
                 'view-all-projects': 'View All',
+                
+                // Service Detail Page
+                'what-we-offer': 'What we Offer',
+                'our-process': 'Our process',
+                'recent-projects-title': 'Recent Projects',
+                'recent-projects-desc': 'Recent accomplishments showcasing our automotive expertise.',
                 
                 // Restorations Page
                 'restorations-title': 'Restorations',
